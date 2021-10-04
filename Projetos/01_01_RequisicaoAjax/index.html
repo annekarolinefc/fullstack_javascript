@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=a, initial-scale=1.0">
+    <title>Requisição Ajax</title>
+</head>
+
+<body>
+    <nav>
+        <a href="/Projetos/01_01_RequisicaoAjax/home.html">Home</a>
+        <a href="/Projetos/01_01_RequisicaoAjax/sobre.html">Sobre</a>
+        <a href="/Projetos/01_01_RequisicaoAjax/quemSomos.html">Quem Somos</a>
+        <a href="/Projetos/01_01_RequisicaoAjax/contato.html">Contato</a>
+    </nav>
+
+    <section id="conteudo"></section>
+
+    <script>
+        document.querySelectorAll('a').forEach(link => {
+            const conteudo = document.getElementById('conteudo')
+
+            link.onclick = function(e){
+                e.preventDefault() //evita que o navegador acesse
+                fetch(link.href)
+                    .then(resp => resp.text())
+                    .then(html => conteudo.innerHTML = html)
+            }
+        })
+    </script>
+</body>
+
+</html>

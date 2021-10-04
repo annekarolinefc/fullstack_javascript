@@ -1,79 +1,142 @@
-<!DOCTYPE html>
+<!DOCTYPE html> <!--Utilizando HTML5-->
 <html lang="pt-BR">
+
 <head>
-    <meta charset="UTF-8">
+    <meta charset="UTF-8"> <!--O padrão que será utilizado.-->
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Semana 01</title>
     <link rel="stylesheet" href="/Semana 01/style.css">
 </head>
+
 <body>
     <header>
         <h1>Semana 01/08</h1>
-    <h2>Estudos dedicados ao HTML</h2>
-    <div class="buttons-route">
-        <button><a href="/Roteiro Completo/index.html">Ver Roteiro</a></button>
-        <button><a href="/index.html">Tela Inicial</a></button>
-    </div>
+        <h2>Estudos dedicados ao HTML</h2>
+        <div class="buttons-route">
+            <button><a href="/Roteiro Completo/index.html">Ver Roteiro</a></button>
+            <button><a href="/index.html">Tela Inicial</a></button>
+        </div>
+        <div class="buttons-day">
+            <button class="buttons__day"><a href="#">Dia 01</a></button>
+            <button class="buttons__day" disabled><a href="#">Dia 02</a></button>
+            <button class="buttons__day" disabled><a href="#">Dia 03</a></button>
+            <button class="buttons__day" disabled><a href="#">Dia 04</a></button>
+            <button class="buttons__day" disabled><a href="#">Dia 05</a></button>
+        </div>
     </header>
     <div class="cards">
-        <h3>Dia 01</h3>
-       <div class="content">
-        <fieldset>
-            <legend>Títulos</legend>
-            <h1>Título h1</h1>
-            <h2>Título h2</h2>
-            <h3>Título h3</h3>
-            <h4>Título h4</h4>
-            <h5>Título h5</h5>
-            <h6>Título h6</h6>
-        </fieldset>
-        <fieldset>
-            <legend>Parágrafos</legend>
-            <p>Os parágrafos são feito utilizando a <b>tag p. Segue exemplo abaixo: </b></p>
-            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aut fugit doloremque laudantium ut quae, unde eligendi accusantium ad est sit sint expedita libero sequi voluptates. Officiis placeat incidunt et labore.</p>
-        </fieldset>
-        <fieldset><legend>
-            Linha no documento | Separação
-        </legend>
-        <p>A linha de separação de um documento é feita utilizando a <b>tag HR</b>.</p>
-        <hr>
-        <br>
-     </fieldset>
-     <fieldset>
-         <legend>Tags de marcação</legend>
-         <p>As tags de marcação são:</p>
-         <strong>Texto em negrito</strong>
-         <br>
-         <s>Texto Riscado</s>
-     </fieldset>
-     <fieldset>
-         <legend>Tags de formatação</legend>
-         <p>As tags de formatação são:</p>
-         <b>Texto em negrito - tag b</b>
-         <br>
-         <i>Texto em itálico - tag i</i>
-         <br>
-         <ins>Texto sinalizado - trecho incluído - tag ins</ins>
-         <br>
-         <del>Texto sinalizado - trecho removido - tag del</del>
-         <br>
-         <mark>Texto destacado - tag mark</mark>
-         <br>
-         <small>Texto menor - tag small</small>
-         <br>
-         <sup>Texto sobrescrito - tag sup</sup>
-         <br>
-         <sub>Texto subscrito - tag sub</sub>
-     </fieldset>
- 
-     <fieldset>
-         <legend>Listas em HTML</legend>
-         <p>As listas em HTML são definidas em:</p>
-         <ul><li>Listas ordenadas</li>
-         <li>Listas não ordenadas</li></ul>
-     </fieldset>
-       </div>
+        <h3 class="title-day">Dia 01</h3>
+        <div class="content">
+            <fieldset>
+                <legend>Anatomia da tag</legend>
+                <p> É caracterizada pela abertura e fechamento.</p>
+                <img src="/images/Anatomia.png" alt="Anatomia da tag">
+            </fieldset>
+            <fieldset>
+                <legend>Comentários</legend>
+                <p>Na seção anatomia da tag, é possivel ver o comentário "corpo da tag".</p>
+            </fieldset>
+            <fieldset>
+                <legend>Anatomia de uma página HTML</legend>
+                <p>As tags semânticas são:</p>
+                <ul>
+                    <li>Header</li>
+                    <li>Nav</li>
+                    <li>Main</li>
+                    <li>Section</li>
+                    <li>Article</li>
+                    <li>Aside</li>
+                    <li>Footer</li>
+                </ul>
+            </fieldset>
+            <fieldset>
+                <legend>Conceitos</legend>
+                <dl>
+                    <dt><b>html</b></dt>
+                    <dd>Envolve todo o documento html.</dd>
+                </dl>
+                <dl>
+                    <dt><b>Doctype HTML</b></dt>
+                    <dd>Diz que o documento irá trabalhar no HTML5</dd>
+                </dl>
+                <dl>
+                    <dt><b>head</b></dt>
+                    <dd>São elementos não visuais (com exceção do title), metadados e importações de arquivos. Envolve o
+                        cabeçalho do documento.</dd>
+                </dl>
+                <dl>
+                    <dt><b>meta</b></dt>
+                    <dd>Fornece as informações gerais sobre o documento.</dd>
+                </dl>
+                <dl>
+                    <dt><b>body</b></dt>
+                    <dd>Onde se encontra o projeto. Tags básicas, tags semanticas e afins.</dd>
+                </dl>
+            </fieldset>
+            <fieldset>
+                <legend>Títulos</legend>
+                <p>São os seis níveis de cabeçalho possível para seu documento. Leva em conta a importância.</p>
+                <h1>Título h1</h1>
+                <h2>Título h2</h2>
+                <h3>Título h3</h3>
+                <h4>Título h4</h4>
+                <h5>Título h5</h5>
+                <h6>Título h6</h6>
+            </fieldset>
+            <fieldset>
+                <legend>Parágrafos</legend>
+                <p>Os parágrafos são feito utilizando a <b>tag p. Segue exemplo abaixo: </b></p>
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aut fugit doloremque laudantium ut quae,
+                    unde eligendi accusantium ad est sit sint expedita libero sequi voluptates. Officiis placeat
+                    incidunt et labore.</p>
+            </fieldset>
+            <fieldset>
+                <legend>
+                    Linha no documento | Separação
+                </legend>
+                <p>A linha de separação de um documento é feita utilizando a <b>tag HR</b>.</p>
+                <hr>
+                <br>
+            </fieldset>
+            <fieldset>
+                <legend>Tags de marcação</legend>
+                <p>As tags de marcação são:</p>
+                <strong>Texto em negrito</strong>
+                <br>
+                <s>Texto Riscado</s>
+            </fieldset>
+            <fieldset>
+                <legend>Tags de formatação</legend>
+                <p>As tags de formatação são:</p>
+                <b>Texto em negrito - tag b</b>
+                <br>
+                <i>Texto em itálico - tag i</i>
+                <br>
+                <ins>Texto sinalizado - trecho incluído - tag ins</ins>
+                <br>
+                <del>Texto sinalizado - trecho removido - tag del</del>
+                <br>
+                <mark>Texto destacado - tag mark</mark>
+                <br>
+                <small>Texto menor - tag small</small>
+                <br>
+                <sup>Texto sobrescrito - tag sup</sup>
+                <br>
+                <sub>Texto subscrito - tag sub</sub>
+            </fieldset>
+
+            <fieldset>
+                <legend>Listas em HTML</legend>
+                <p>As listas em HTML são definidas em:</p>
+                <ul>
+                    <li>Listas ordenadas</li>
+                    <li>Listas não ordenadas</li>
+                </ul>
+            </fieldset>
+        </div>
     </div>
+
 </body>
+
 </html>

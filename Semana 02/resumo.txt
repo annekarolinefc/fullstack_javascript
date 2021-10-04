@@ -1,0 +1,19 @@
+Três formas de aplicar o css
+1) A parti da propria tag
+    <h1> CSS </h1>
+2)Referenciar através do id 
+    #NomeDoId{
+        
+    }
+3)Referenciar através da classe
+    .nomeDaClasse{
+
+    }
+
+Colocando o css:
+1) dentro da tag style no heads
+    <style> 
+    h1{
+        display: none;
+    }
+    </style>

@@ -18,15 +18,16 @@
             <button><a href="/index.html">Tela Inicial</a></button>
         </div>
         <div class="buttons-day">
-            <button class="buttons__day"><a href="#">Dia 01</a></button>
+            <button class="buttons__day"><a href="#dia01">Dia 01</a></button>
             <button class="buttons__day" disabled><a href="#">Dia 02</a></button>
             <button class="buttons__day" disabled><a href="#">Dia 03</a></button>
             <button class="buttons__day" disabled><a href="#">Dia 04</a></button>
             <button class="buttons__day" disabled><a href="#">Dia 05</a></button>
         </div>
     </header>
-    <div class="cards">
-        <h3 class="title-day">Dia 01</h3>
+    <div class="cards" id="dia01">
+        <h3 class="title-day
+        ">Dia 01</h3>
         <div class="content">
             <fieldset>
                 <legend>Anatomia da tag</legend>
@@ -76,7 +77,7 @@
             </fieldset>
             <fieldset>
                 <legend>Títulos</legend>
-                <p>São os seis níveis de cabeçalho possível para seu documento. Leva em conta a importância.</p>
+                <p>São os seis níveis de <b>cabeçalho</b> possível para seu documento. Leva em conta a importância.</p>
                 <h1>Título h1</h1>
                 <h2>Título h2</h2>
                 <h3>Título h3</h3>
@@ -92,6 +93,10 @@
                     incidunt et labore.</p>
             </fieldset>
             <fieldset>
+                <legend>Quebra de Linha</legend>
+                <p>Isso está <br> em uma <br /> nova linha</p>
+            </fieldset>
+            <fieldset>
                 <legend>
                     Linha no documento | Separação
                 </legend>
@@ -100,9 +105,10 @@
                 <br>
             </fieldset>
             <fieldset>
-                <legend>Tags de marcação</legend>
+                <legend>Tags de marcação semânticas</legend>
                 <p>As tags de marcação são:</p>
-                <strong>Texto em negrito</strong>
+                <strong>Tag strong: Texto marcado como forte. Tem um grau de importancia maior.</strong>
+                <p>Tag em(enfase), exemplo: Alta Voltagem! <em>Somente pessoas autorizadas!</em></p>
                 <br>
                 <s>Texto Riscado</s>
             </fieldset>
@@ -125,17 +131,83 @@
                 <br>
                 <sub>Texto subscrito - tag sub</sub>
             </fieldset>
-
+            <fieldset>
+                <legend>Citações</legend>
+                <p>A citações são feitas com a tag blockquote.</p>
+                <blockquote cite="https://www.google.com"><p>Citações longas...</p></blockquote>
+                <p>Fulano disse que <q>A vida é bela</q></p>
+                <p><cite>Livro bem Legal</cite> definiu mais precisamente...</p>
+            </fieldset>
+            <fieldset>
+                <legend>Abreviações</legend>
+                <p>As abreviações são feitas com a tag abbr.</p>
+                <p>
+                    <abbr title="Professor">Prof</abbr> Fulano em seu livro.
+                </p>
+            </fieldset>
+            <fieldset>
+                <legend>Definições</legend>
+                <p><dfn>Buraco Negro</dfn> é a região do espaço que ...</p>
+            </fieldset>
+            <fieldset>
+                <legend>Endereço</legend>
+                <p>A tag utilizada para endereço é a address.</p>
+                <address><p>
+                    Rua ABC, n <sup>o</sup> 123...
+                </p></address>
+            </fieldset>
             <fieldset>
                 <legend>Listas em HTML</legend>
                 <p>As listas em HTML são definidas em:</p>
                 <ul>
-                    <li>Listas ordenadas</li>
-                    <li>Listas não ordenadas</li>
+                    <li>Listas ordenadas - Tag ol</li>
+                    <li>Listas não ordenadas - Tag ul</li>
                 </ul>
+
+                <h4>Lista de Aprovados</h4>
+                <ol>
+                    <li>Bia</li>
+                    <li>Pedro</li>
+                    <li>Ana</li>
+                    <li>João</li>
+                </ol>
+                <h4>Lista de Compras</h4>
+                <ul>
+                    <li>Queijo</li>
+                    <li>Leite</li>
+                    <li>Arroz</li>
+                    <li>Pão</li>
+                </ul>
+                <h4>Lista de Definições</h4>
+                <h5>Principais termos do glossário de Cloud Computing</h5>
+                <dl>
+                    <dt>Baas</dt>
+                    <dd>Backend Como Serviço</dd>
+                    <dt>Iaas</dt>
+                    <dd>Infraestrutura Como Serviços</dd>
+                </dl>
+            </fieldset>
+            <fieldset>
+                <legend>Links</legend>
+                <h3>URL Absoluta</h3>
+                <a href="http://www.google.com.br">Google 1</a> <p>Este link abre a página do google nesta aba.</p>
+                <a href="http://www.google.com.br" target="_blank">Google 2</a> <p>Este link abre a página do google em uma nova aba.</p>
+                <h3>URL Relativa</h3>
+                <a href="index.html">Volta 1</a>
+                <a href="/index.html">Voltar 2</a>
+                <a href="../index.html">Voltar 3</a>
+                <h3>Envio de e-mail</h3>
+                <a href="mailto:annekarolinefc@gmail.com">Entre em contato</a>
+                
             </fieldset>
         </div>
     </div>
+
+
+
+
+
+    <div class="cards" id="dia02"></div>
 
 </body>
 

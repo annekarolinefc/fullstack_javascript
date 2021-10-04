@@ -1,5 +1,5 @@
 body{
-    padding: 20px;
+    padding: 10px;
     font-family: Helvetica, Arial, sans-serif;
 }
 
@@ -55,7 +55,7 @@ button:disabled, button[disabled]{
 }
 
 img{
-    max-height: 180px;
+    max-height: 100px;
 }
 
 .container__content{

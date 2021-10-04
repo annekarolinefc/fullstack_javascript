@@ -1,0 +1,20 @@
+body{
+    padding: 10px;
+}
+.listas{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: center;
+    flex-direction: row;
+    
+}
+
+.nao-formatado, .texto-formatado{
+    width: 45%;
+    padding: 10px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}

@@ -11,6 +11,10 @@ body{
 H1{
     text-align: center;
 }
+.content-exercicies, .content-projects{
+    display: flex;
+    flex-direction: row;
+}
 .exercicies{
     width: 200px;
     height:100px;
@@ -21,8 +25,7 @@ H1{
     text-align: center;
     display: flex;
     flex-direction: column;
-    justify-content: center;
-    resize: vertical;
+    margin-right: 20px;
 }
 
 div > a{

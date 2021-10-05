@@ -1,3 +1,21 @@
+CSS
+Cascading Style Sheets
+Estilizar sua página web
+cores
+tamanho da fonte
+cor de fundo
+
+Estilizamos nossos sites.
+Esta diretamente relacionado com o HTML
+Utilizamso propriedades.
+
+Propriedades do css
+    - font-size
+    - color
+    - background-color
+    - width e height
+
+
 Três formas de aplicar o css
 1) A parti da propria tag
     <h1> CSS </h1>
@@ -17,3 +35,8 @@ Colocando o css:
         display: none;
     }
     </style>
+
+DESIGN REPONSIVO
+Faz com que os sites se comportem em qualquer dispositivo
+diretamente relacionado com o CSS
+Regras que aplicamos em código

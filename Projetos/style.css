@@ -1,4 +1,6 @@
-
+html{
+    font-size: 16px;
+}
 .content-exercices, .content-project{
     border: 1px solid gray;
     padding: 10px;
@@ -16,8 +18,8 @@ H1{
     flex-direction: row;
 }
 .exercicies{
-    width: 200px;
-    height:100px;
+    width: 30%;
+    height:10%;
     border: 1px solid black;
     border-radius: 20px;
     background-color: rgb(236, 232, 236);
@@ -31,7 +33,7 @@ H1{
 div > a{
     text-decoration: none;
     color: black;
-    font-size: 22px;
+    font-size: 1.2rem;
     font-weight: 900;
     padding: 20px;
     margin: 0;

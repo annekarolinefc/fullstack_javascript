@@ -263,11 +263,21 @@
                 <legend>Criando Tabelas</legend>
                     <p>Para criar a tabela, você deverá utilizar</p>
                     <ol>
-                        <li>tag table - representando uma estrutura</li>
+                        <li>tag table - representando a estrutura da tabela</li>
                         <li>tag thead - estrutura do cabeçalho</li>
                         <li>tag tbody - estrutura do corpo</li>
+                        <li>Tag tfoot - estrutura do footer</li>
                         <li>tag tr - table row - representando a linha</li>
-                        <li>tag th - table head</li>
+                        <li>tag th - table head - representa os campos de uma linha. Seria cada coluna.</li>
+                        <li>tag caption - diz sobre o que é a tabela</li>
+                        <li>Atributo colspan="x" - ocupa x colunas</li>
+                        <li>Atributo rolspan="x" - ocupa x linhas</li>
+                    </ol>
+                    <p>Algumas propriedades de CSS para as tabelas são:</p>
+                    <ol>
+                        <li>border-collapse: evitar duplicação de bordas</li>
+                        <li>padding: espaçamento entre os elementos da coluna</li>
+                        <li>tbody tr:hover: background-color: gray -> permite pintar a linha da tabela quando o mouse estiver em cima.</li>
                     </ol>
 
                     <table border="1">

@@ -1,3 +1,6 @@
+html{
+    font-size: 16px;
+}
 body{
     padding: 10px
 }
@@ -33,11 +36,22 @@ button:hover > a{
     color: white;
 }
 
-.conteudo-semanal{
+.conteudo-semanal-estudos{
     margin: 10px 30px;
     border: 2px solid gray;
     padding: 10px 30px;
     border-radius: 20px;
+   
+}
+
+.conteudo-semanal{
+    margin: 10px 30px;
+    
+    padding: 10px 30px;
+    border-radius: 20px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
 }
 
 .conteudo-diario{
@@ -45,4 +59,11 @@ button:hover > a{
     border: 1px solid gray;
     padding: 20px;
     border-radius: 20px;
+    display: flex;
+    flex-direction: column;
+}
+
+.conteudo-diario h3{
+    text-align: center;
+    border-bottom: 1px solid black;
 }

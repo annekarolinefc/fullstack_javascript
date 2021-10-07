@@ -84,7 +84,12 @@ BORDER
 
     border: 2px solid orange;
 
-
+FONTES
+    As propriedades são:
+        - font-size : tamanho
+        - font-style: estilo da fonte
+        - font-weight: bold, normal - são Estilizamos
+        - font-family: nome das fontes 
 SELETORES 
 
 

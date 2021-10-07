@@ -1,8 +1,10 @@
-<!DOCTYPE html> <!--Utilizando HTML5-->
+<!DOCTYPE html>
+<!--Utilizando HTML5-->
 <html lang="pt-BR">
 
 <head>
-    <meta charset="UTF-8"> <!--O padrão que será utilizado.-->
+    <meta charset="UTF-8">
+    <!--O padrão que será utilizado.-->
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Semana 01</title>
@@ -21,7 +23,7 @@
             <button class="buttons__day"><a href="#dia01">Dia 01</a></button>
             <button class="buttons__day"><a href="#dia02">Dia 02</a></button>
             <button class="buttons__day"><a href="#dia03">Dia 03</a></button>
-            <button class="buttons__day" disabled><a href="#">Dia 04</a></button>
+            <button class="buttons__day" ><a href="#dia04">Dia 04</a></button>
             <button class="buttons__day" disabled><a href="#">Dia 05</a></button>
         </div>
     </header>
@@ -33,7 +35,7 @@
                 <legend>HTML</legend>
                 <p>HTML: Hyper Text Markup Language.</p>
                 <p>É uma linguagem de marcação. Marca uma página web atraves de tags.
-                Marcamos onde e como queremos que nossos elementos se comportem.
+                    Marcamos onde e como queremos que nossos elementos se comportem.
                 </p>
             </fieldset>
             <fieldset>
@@ -144,7 +146,9 @@
             <fieldset>
                 <legend>Citações</legend>
                 <p>A citações são feitas com a tag blockquote.</p>
-                <blockquote cite="https://www.google.com"><p>Citações longas...</p></blockquote>
+                <blockquote cite="https://www.google.com">
+                    <p>Citações longas...</p>
+                </blockquote>
                 <p>Fulano disse que <q>A vida é bela</q></p>
                 <p><cite>Livro bem Legal</cite> definiu mais precisamente...</p>
             </fieldset>
@@ -162,9 +166,11 @@
             <fieldset>
                 <legend>Endereço</legend>
                 <p>A tag utilizada para endereço é a address.</p>
-                <address><p>
-                    Rua ABC, n <sup>o</sup> 123...
-                </p></address>
+                <address>
+                    <p>
+                        Rua ABC, n <sup>o</sup> 123...
+                    </p>
+                </address>
             </fieldset>
             <fieldset>
                 <legend>Listas em HTML</legend>
@@ -201,8 +207,10 @@
                 <legend>Links</legend>
                 <p>Links são lugares onde você clica no site que te enviam para outro lugar.</p>
                 <h3>URL Absoluta</h3>
-                <a href="http://www.google.com.br">Google 1</a> <p>Este link abre a página do google nesta aba.</p>
-                <a href="http://www.google.com.br" target="_blank">Google 2</a> <p>Este link abre a página do google em uma nova aba.</p>
+                <a href="http://www.google.com.br">Google 1</a>
+                <p>Este link abre a página do google nesta aba.</p>
+                <a href="http://www.google.com.br" target="_blank">Google 2</a>
+                <p>Este link abre a página do google em uma nova aba.</p>
                 <h3>URL Relativa</h3>
                 <a href="index.html">Volta 1</a>
                 <a href="/index.html">Voltar 2</a>
@@ -228,30 +236,30 @@
     <div class="cards" id="dia02">
         <h3 class="title-day">Dia 02</h3>
         <div class="content">
-        <fieldset>
-            <legend>Organizando o código em divs, sections e span</legend>
-            <p>As divs e spans são utilizado bastante para aplicação de Estilo.</p>
-            <h3>Divs</h3>
-            <p>Elemento de bloco.</p>
-            <section>
-                <h3>Section</h3>
-                <p>Elemento dentro de uma section</p>
-                <p>As sections servem para dividir o site.</p>
-                <p>Uma boa prática é criar uma seção e dividi-la com divs</p>
-            </section>
-            <h3>Span</h3>
-            <p>Elemento que não pega uma nova linha! Utiliza somente o espaço necessário.
-            <p>
-                - Exemplo do uso do span:
-            </p>
-            <span>Guilherme</span><span>João</span>
-            </p>
-        </fieldset>
-        <fieldset>
-            <legend>Atributos em HTML</legend>
-            Campos de nome="valor" adicionados dentro da tag da esquerda.
-            Eles são responsáveis por incrementar uma tag.
-        </fieldset>
+            <fieldset>
+                <legend>Organizando o código em divs, sections e span</legend>
+                <p>As divs e spans são utilizado bastante para aplicação de Estilo.</p>
+                <h3>Divs</h3>
+                <p>Elemento de bloco.</p>
+                <section>
+                    <h3>Section</h3>
+                    <p>Elemento dentro de uma section</p>
+                    <p>As sections servem para dividir o site.</p>
+                    <p>Uma boa prática é criar uma seção e dividi-la com divs</p>
+                </section>
+                <h3>Span</h3>
+                <p>Elemento que não pega uma nova linha! Utiliza somente o espaço necessário.
+                <p>
+                    - Exemplo do uso do span:
+                </p>
+                <span>Guilherme</span><span>João</span>
+                </p>
+            </fieldset>
+            <fieldset>
+                <legend>Atributos em HTML</legend>
+                Campos de nome="valor" adicionados dentro da tag da esquerda.
+                Eles são responsáveis por incrementar uma tag.
+            </fieldset>
         </div>
     </div>
 
@@ -261,46 +269,47 @@
         <div class="content">
             <fieldset>
                 <legend>Criando Tabelas</legend>
-                    <p>Para criar a tabela, você deverá utilizar</p>
-                    <ol>
-                        <li>tag table - representando a estrutura da tabela</li>
-                        <li>tag thead - estrutura do cabeçalho</li>
-                        <li>tag tbody - estrutura do corpo</li>
-                        <li>Tag tfoot - estrutura do footer</li>
-                        <li>tag tr - table row - representando a linha</li>
-                        <li>tag th - table head - representa os campos de uma linha. Seria cada coluna.</li>
-                        <li>tag caption - diz sobre o que é a tabela</li>
-                        <li>Atributo colspan="x" - ocupa x colunas</li>
-                        <li>Atributo rolspan="x" - ocupa x linhas</li>
-                    </ol>
-                    <p>Algumas propriedades de CSS para as tabelas são:</p>
-                    <ol>
-                        <li>border-collapse: evitar duplicação de bordas</li>
-                        <li>padding: espaçamento entre os elementos da coluna</li>
-                        <li>tbody tr:hover: background-color: gray -> permite pintar a linha da tabela quando o mouse estiver em cima.</li>
-                    </ol>
+                <p>Para criar a tabela, você deverá utilizar</p>
+                <ol>
+                    <li>tag table - representando a estrutura da tabela</li>
+                    <li>tag thead - estrutura do cabeçalho</li>
+                    <li>tag tbody - estrutura do corpo</li>
+                    <li>Tag tfoot - estrutura do footer</li>
+                    <li>tag tr - table row - representando a linha</li>
+                    <li>tag th - table head - representa os campos de uma linha. Seria cada coluna.</li>
+                    <li>tag caption - diz sobre o que é a tabela</li>
+                    <li>Atributo colspan="x" - ocupa x colunas</li>
+                    <li>Atributo rolspan="x" - ocupa x linhas</li>
+                </ol>
+                <p>Algumas propriedades de CSS para as tabelas são:</p>
+                <ol>
+                    <li>border-collapse: evitar duplicação de bordas</li>
+                    <li>padding: espaçamento entre os elementos da coluna</li>
+                    <li>tbody tr:hover: background-color: gray -> permite pintar a linha da tabela quando o mouse
+                        estiver em cima.</li>
+                </ol>
 
-                    <table border="1">
-                        <caption>
-                            <h4>Satélites de Urano</h4>
-                        </caption>
-                        <thead>
-                            <tr>
-                                <th>nome</th>
-                                <th>Data do Descobrimento</th>
-                            </tr>
-                        </thead>
-                        <tbody>
-                            <tr>
-                                <td>Titânia</td>
-                                <td>1787</td>
-                            </tr>
-                            <tr>
-                                <td>Oberon</td>
-                                <td>1787</td>
-                            </tr>
-                        </tbody>
-                    </table>
+                <table border="1">
+                    <caption>
+                        <h4>Satélites de Urano</h4>
+                    </caption>
+                    <thead>
+                        <tr>
+                            <th>nome</th>
+                            <th>Data do Descobrimento</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>Titânia</td>
+                            <td>1787</td>
+                        </tr>
+                        <tr>
+                            <td>Oberon</td>
+                            <td>1787</td>
+                        </tr>
+                    </tbody>
+                </table>
             </fieldset>
             <fieldset>
                 <legend>Conhecendo os Forms</legend>
@@ -308,10 +317,11 @@
                 <p>O form é constituido de:</p>
                 <ol>
                     <li>Tag Form</li>
-                    <li>Tag input - é a tag de entrada</li>
-                    <li>Tag submit -  é o botão que envia as informações para o servidor</li>
+                    <li>Tag label - descrição do campo</li>
+                    <li>Tag input - é a tag de entrada. O atalho é "input: + o tipo"</li>
+                    <li>Tag submit - é o botão que envia as informações para o servidor</li>
                 </ol>
-                
+
             </fieldset>
         </div>
     </div>
@@ -329,56 +339,75 @@
                     <li>Validação de mínimo e máximo: necessário colocae tipo number e min="x" max="y"</li>
                 </ol>
             </fieldset>
-            <fieldset>
-                <legend>Dropdown</legend>
-                <input list="browsers">
-                <datalist id="browsers">
-                    <option value="Internet Explorer">
-                    <option value="Firefox">
-                    <option value="Chrome">
-                    <option value="Opera">
-                    <option value="Safari">
-                </datalist>
-            </fieldset>
 
             <fieldset>
                 <legend>Tipos de Inputs</legend>
-                <ol>
+                <ul>
                     <li>Tipo text</li>
-                        <input type="text">
+                    <input type="text">
                     <li>Tipo number</li>
-                        <input type="number">
+                    <input type="number">
                     <li>Tipo email</li>
-                        <input type="email">
+                    <input type="email">
                     <li>Tipo password</li>
-                        <input type="password">
+                    <input type="password">
                     <li>Tipo submit</li>
-                        <button type="submit">
-                            Enviar
-                        </button>
+                    <button type="submit">
+                        Enviar
+                    </button>
                     <li>Tipo radio</li>
+                    <h3>Formulário de Gênero</h3>
                     <form>
                         <input type="radio" name="gender" value="male" checked>Male <br>
-                        <input type="radio" name="gender" value="female" >Female <br>
-                        <input type="radio" name="gender" value="other" >Other <br>
+                        <input type="radio" name="gender" value="female">Female <br>
+                        <input type="radio" name="gender" value="other">Other <br>
                     </form>
+                    <h3>Formulário de Tipo </h3>
+                    <input type="radio" name="tipo" value="admin">Admin
+                    <input type="radio" name="tipo" value="regular">Regular
+                    <input type="radio" name="tipo" value="professor">Professor
                     <li>Tipe checkbox</li>
-                        <form>
-                            <input type="checkbox" name="vehicle1" value="Bike"> I have a bike<br>
-                            <input type="checkbox" name="vehicle2" value="Car"> I have a car<br>
-                        </form>
+                    <h3>Formulário de Veículos</h3>
+                    <form>
+                        <input type="checkbox" name="vehicle1" value="Bike"> I have a bike<br>
+                        <input type="checkbox" name="vehicle2" value="Car"> I have a car<br>
+                    </form>
+                    <h3>Formulário de Ativo</h3>
+                    <input type="checkbox" name="ativo"> Ativo
                     <li>Tipo date</li>
                     <input type="date" name="bday">
-                    <li></li>
+                    <li>Dropdown</li>
+
+                    <input list="browsers">
+                    <datalist id="browsers">
+                        <option value="Internet Explorer">
+                        <option value="Firefox">
+                        <option value="Chrome">
+                        <option value="Opera">
+                        <option value="Safari">
+                    </datalist>
+                    <li>Select</li>
+                    <h3>Select de uma opção</h3>
+                    <select name="estado" id="estado">
+                        <option>Selecione</option>
+                        <option value="ac">Acre</option>
+                        <option value="ac">Bahia</option>
+                        <option value="ac">Ceará</option>
+                        <option value="ac">Minas Gerais</option>
+                    </select>
+                    <h3>Select de várias opções</h3>
+                    <select name="interesses" id="interesses" multiple></select>
+                    <li>Textarea</li>
+                    <textarea name="bio" id="bio" cols="30" rows="10"></textarea>
                 </ol>
             </fieldset>
             <fieldset>
                 <legend>Audios e Videos</legend>
                 <video style="width: 50%;" controls>
-                    <source src="/Semana 01/COSTA RICA IN 4K 60fps HDR (ULTRA HD).mp4" type="video/mp4"> 
+                    <source src="/Semana 01/COSTA RICA IN 4K 60fps HDR (ULTRA HD).mp4" type="video/mp4">
                 </video>
                 <audio controls>
-                    <source src="audio.ogg" type="audio/ogg"> 
+                    <source src="audio.ogg" type="audio/ogg">
                 </audio>
             </fieldset>
 
@@ -389,13 +418,13 @@
                 <p>Dentro do head, você deve utilizar as meta tags:</p>
                 <ol>
                     <li>Title</li>
-                        <title>Meu site</title>
+                    <title>Meu site</title>
                     <li>meta name e content para SEO</li>
                     <!--
                         <meta name="description" content="Esta é a descrição do site.">
                     -->
                     <li>meta property e content para SMO</li>
-                       <!--
+                    <!--
                         <meta property="og:title" content="Escreva o titulo do site">
                         <meta property="og:site_name" content="Escreva o nome do site">
                         <meta property="og:description" content="Escreva a descrição do site">
@@ -403,11 +432,11 @@
                         <meta property="og:image" content="www.../og-img.jpg">
                         <meta property="og:image:type" content="image/jpg">
                        -->
-                    </ol>
+                </ol>
             </fieldset>
         </div>
     </div>
-            <!--DIA  05-->
+    <!--DIA  05-->
     <div class="cards" id="dia05">
         <h3 class="title-day">Dia 05</h3>
         <div class="content">

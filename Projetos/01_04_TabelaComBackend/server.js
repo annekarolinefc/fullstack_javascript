@@ -1,0 +1,14 @@
+//configurar para receber a requisição
+
+const express = require('express')
+const app = express()
+const bodyParser = require('body-parse')
+
+app.use(bodyParser.urlencoded({extended: true}))
+
+app.post('/usuarios', (req, resp) => {
+    console.log(req.body)
+    resp.send('<h1>Parabéns</h1>')
+}) //requisição do tipo post em cima da url /usuarios
+
+app.listen(3003)

@@ -220,6 +220,7 @@
                 <h3>Atributos </h3>
                 <p>Target:"_blank" -> utilizado para abrir um site em uma nova aba</p>
             </fieldset>
+
             <fieldset>
                 <legend>Imagens</legend>
                 <p>Para importar as imagens, utiliza-se a tag img. É uma tag inline.</p>
@@ -227,6 +228,17 @@
                 <img src="/images/Anatomia.png" alt="">
                 <h3>Importação Externa</h3>
                 <img src="https://www.petz.com.br/blog/wp-content/uploads/2021/03/piercing-para-cachorro-2.jpg" alt="">
+                <ul>
+                    <li>Atributo Alt: caso a imagem nao carregue, aparecerá um texto descritivo. Também é interpretada por leitores para deficientes visuais. </li>
+                    <br>
+                    <div>
+                        <img src="" alt="Imagem não carregada"> 
+                    </div>
+                    <br>
+                    <li>Atributo src: endereço da imagem</li>
+                    <li>Atributo width: largura da imagem</li>
+                    <li>Atributo height: altura da imagem</li>
+                </ul>
             </fieldset>
         </div>
     </div>
@@ -396,7 +408,14 @@
                         <option value="ac">Minas Gerais</option>
                     </select>
                     <h3>Select de várias opções</h3>
-                    <select name="interesses" id="interesses" multiple></select>
+                    <select name="interesses" id="interesses" multiple size="5">
+                        <option value="js"></option>
+                        <option value="java"></option>
+                        <option value="php"></option>
+                        <option value="python"></option>
+                        <option value="go"></option>
+
+                    </select>
                     <li>Textarea</li>
                     <textarea name="bio" id="bio" cols="30" rows="10"></textarea>
                 </ol>

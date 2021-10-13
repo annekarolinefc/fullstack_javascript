@@ -1,0 +1,39 @@
+.moon{
+    color: red;
+}
+
+.yellow-text{
+    color: yellow;
+    font-size: 20px;
+}
+
+.big-text{
+    font-size: 40px;
+}
+
+#europe-text{
+    font-size: 15px;
+    color: blue;
+}
+
+li a{
+    color: violet;
+}
+
+/*Trabalhando com Herança*/
+div{
+    color: blue;
+    border: 2px solid;
+}
+
+div ul li{
+    color: green;
+    border: inherit; /*significa que vai herdar a borda do pai*/
+}
+
+.arial-family{
+    font-family: Arial;
+}
+.verdana-family{
+    font-family: verdana;
+}

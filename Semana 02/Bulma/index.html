@@ -1,16 +1,108 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Bulma</title>
+    <style>
+        body {
+            padding: 20px;
+        }
+
+        header {
+            text-align: center;
+        }
+
+        img {
+            width: 400px;
+
+        }
+
+        .buttons-route {
+            text-align: center;
+            margin-bottom: 20px;
+        }
+
+        button {
+            background-color: khaki;
+            border: 1px solid;
+            padding: 5px 10px;
+            border-radius: 20px;
+            margin: 0 30px;
+        }
+
+        button>a {
+            color: black;
+            text-decoration: none;
+            font-size: 14px;
+            padding: 4px 15px;
+        }
+
+        button:hover {
+            background-color: rgb(129, 27, 104);
+            transform: scale(1.05);
+        }
+
+        button:hover>a {
+            color: white;
+        }
+
+        .buttons__day {
+            background-color: rgb(245, 184, 163);
+        }
+
+        .cards {
+            margin-top: 15px;
+            border: 1px solid gray;
+            border-radius: 20px;
+        }
+
+        .cards>h3 {
+            text-align: center;
+        }
+
+        .content {
+            padding: 10px 20px;
+        }
+
+        fieldset {
+            margin-bottom: 1rem;
+        }
+
+        .title-day {
+            font-size: 24px;
+        }
+
+        button:disabled,
+        button[disabled] {
+            border: 1px solid #999999;
+            background-color: #cccccc;
+            color: #666666;
+        }
+    </style>
 </head>
+
 <body>
-    <h1>Bulma</h1>
-    <h2>Framework CSS</h2>
-    <button><a href="https://bulma.io/">Acesse o Bulma aqui</a></button>
+    <header>
+        <h1>Semana 02/08</h1>
+        <h1>Estudos dedicados ao Bulma</h1>
+        <h2>Framework CSS</h2>
+        <div class="buttons-route">
+            <button><a href="/Roteiro Completo/index.html">Ver Roteiro</a></button>
+            <button><a href="/index.html">Tela Inicial</a></button>
+        </div>
+        <div class="buttons-day">
+            <button class="buttons__day"><a href="#dia01">Dia 01</a></button>
+            <button class="buttons__day"><a href="#dia02">Dia 02</a></button>
+            <button class="buttons__day"><a href="#dia03">Dia 03</a></button>
+            <button class="buttons__day"><a href="#dia04">Dia 04</a></button>
+            <button class="buttons__day"><a href="#dia05">Dia 05</a></button>
+        </div>
+    </header>
     <fieldset>
+        <button><a href="https://bulma.io/">Acesse o Bulma aqui</a></button>
         <legend>O que é o Bulma?</legend>
         <p>O Bulma é um framework CSS.</p>
     </fieldset>
@@ -20,7 +112,8 @@
         <ul>
             <li>NPM: npm install bulma</li>
             <li>cdnjs CDN: atraves deste <a href="https://bulma.io/documentation/overview/start/">link</a></li>
-            <li>Download do repositórios: Através deste <a href="https://bulma.io/documentation/overview/start/">link</a></li>
+            <li>Download do repositórios: Através deste <a
+                    href="https://bulma.io/documentation/overview/start/">link</a></li>
         </ul>
         <p>Demais passos:</p>
         <ul>
@@ -46,7 +139,8 @@
     <fieldset>
         <legend>Responsividade com o Bulma</legend>
         <p>O bulma se adapta as telas.</p>
-        
+
     </fieldset>
 </body>
+
 </html>

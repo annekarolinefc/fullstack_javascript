@@ -5,163 +5,216 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="/Semana 02/style.css">
+    <link rel="stylesheet" href="/Semana 02/CSS/style.css">
     <title>CSS</title>
 </head>
 
 <body>
-    <h1>CSS</h1>
-    <h2>Cascate Style Sheet</h2>
-
-    <fieldset>
-        <legend>Seletores</legend>
-        <p>Os seletores podem ser feito atraves de <b>classe e id</b>.</p>
-        <h2>Classes</h2>
-        <p></p>
-        <h2>Ids</h2>
-        <p>Mudar um elemento específico. Sem reaproveitamento
-        </p>
-        <br>
-        <h2>Exemplificando:</h2>
-        <h3>Lista de luas</h3>
-        <ul>
-            <li class="moon">Métis</li>
-            <li class="moon">Adrasteia</li>
-            <li class="moon">Tebe</li>
-            <li class="yellow-text">Io</li>
-            <li id="europe-text">Europa</li>
-            <li>Ganímedes</li>
-            <li>Calisto</li>
-            <li>Temisto</li>
-            <li class="big-text">+60</li>
-        </ul>
-
-    </fieldset>
-    <fieldset>
-        <legend>Seletores mais Avançados</legend>
-        <h2>Os seletores avançados são:</h2>
-        <details>
-            <summary>*</summary>
-            <p>É o seletor estrela (star).
-                Seleciona todos os elementos do documento e aplica o estilo.
-                usado em poucos casos.
-            </p>
-        </details>
-        <details>
-            <summary>Seletor de descendencia</summary>
-            <p>Ex: <b>li a {}</b> :neste caso é aplicado o estilo a todos os links descendentes do item da lista.</p>
-        </details>
-        <details>
-            <summary>Seletor filho</summary>
-            <p>utiliza na sintaxe o ></p>
-            <p>
-                Ex: <b>li > a {}</b> : todo link, filho de li, recebe estilo x.</p>
-        </details>
-        <details>
-            <summary>Seletor adjacente</summary>
-            <p>Ex: <b>h1 + h4 {}</b> :Todo h4 que vem logo após o h1</p>
-        </details>
-        <details>
-            <summary>Seletor de atributo</summary>
-            <p>Ex: <b>a[href='/recibo'] {} </b> : Busca, em todas as ancoras, um href igual ao meu</p>
-        </details>
-        <details>
-            <summary>Pseudo-classe</summary>
-            <p>Ex: <b>li:nth-of-type(2)</b> : Todos os li que sejam segundo.</p>
-        </details>
-        <h2>Exemplificando</h2>
-        <div>
-            <h3>Comunicação via satélite</h3>
-            <ul>
-                <li>$10.010,00</li>
-                <li>$20.008,00</li>
-                <li>$10.012,50</li>
-            </ul>
-            <h3>Ajustes da rota</h3>
-            <ul>
-                <li><a href="#">$30.007,00</a></li>
-                <li><a href="#">$44.015,00</a></li>
-                <li><a href="#">$34.012,00</a></li>
-            </ul>
-
+    <header>
+        <h1>Semana 02/08</h1>
+        <h1>Estudos dedicados ao CSS</h1>
+        <h2>Cascate Style Sheet</h2>
+        <div class="buttons-route">
+            <button><a href="/Roteiro Completo/index.html">Ver Roteiro</a></button>
+            <button><a href="/index.html">Tela Inicial</a></button>
         </div>
-    </fieldset>
-    <fieldset>
-        <legend>Especificidade</legend>
-        <p>A especificidade determina quais regras CSS serão aplicadas.</p>
-        <p>A ordem de especificidade é:</p>
-        <ol>
-            <li>Estilo Inline</li>
-            <li>Id</li>
-            <li>Classe, pseudo-cçasse e atributo</li>
-            <li>Elemento, pseudo-elemento</li>
-        </ol>
-    </fieldset>
-    <fieldset>
-        <legend>Herança</legend>
-        <p>Basicamente é os filhos herdando o estilo dos pais.</p>
-        <p>Uma das opções, é utilizar a palavra <b>inherit</b>, como valor da propriedade.</p>
-        <div>
-            <h3>Planetas
-            </h3>
-            <ul>
-                <li>Terra</li>
-                <li>Marte</li>
-                <li>Júpiter</li>
-            </ul>
+        <div class="buttons-day">
+            <button class="buttons__day"><a href="#dia01">Dia 01</a></button>
+            <button class="buttons__day"><a href="#dia02">Dia 02</a></button>
+            <button class="buttons__day"><a href="#dia03">Dia 03</a></button>
+            <button class="buttons__day"><a href="#dia04">Dia 04</a></button>
+            <button class="buttons__day"><a href="#dia05">Dia 05</a></button>
         </div>
-    </fieldset>
-    <fieldset>
-        <legend>Textos e Fontes</legend>
-        <p>Aplicada através da font-family e da generic-family</p>
-        <h3>Font-family</h3>
-        <ul>
-            <li>Times</li>
-            <li>Arial</li>
-            <li>Courier</li>
-        </ul>
-        <h3>Generic-family</h3>
-        <ul>
-            <li>serif</li>
-            <li>cursive</li>
-            <li>fantasy</li>
-            <li>monospace</li>
-        </ul>
-        <h3>Exemplificando:</h3>
-        <p class="arial-family"><b>Família Arial</b>: Lorem ipsum dolor sit amet, consectetur adipisicing elit. Assumenda id itaque velit ipsa, debitis blanditiis placeat fuga? Soluta magni tempora omnis assumenda dolore, sapiente, consequatur rem obcaecati odio modi perferendis!</p>
-        <p class="verdana-family"><b>Família Verdana</b>: Lorem ipsum dolor sit amet, consectetur adipisicing elit. Assumenda id itaque velit ipsa, debitis blanditiis placeat fuga? Soluta magni tempora omnis assumenda dolore, sapiente, consequatur rem obcaecati odio modi perferendis!</p>
-        <h3>Outras propriedades</h3>
-        <details>
-            <summary>Font-size</summary>
-            <p>Define o tamanho da fonte.</p>
-        </details>
-        <details>
-            <summary>Font-weight</summary>
-            <p>Define o peso da fonte.</p>
-        </details>
-        <details>
-            <summary>Line-height</summary>
-            <p>Muda o espaço entre as linhas</p>
-        </details>
-        <details>
-            <summary>Text-align</summary>
-            <p>Alinhamento dos textos.</p>
-        </details>
-    </fieldset>
-    <fieldset>
-        <legend>Usando Google Fonts</legend>
-        <a href="https://fonts.google.com/">Google Fontes</a>
-        <p>Adicionado através de links.</p>
-    </fieldset>
-    <fieldset>
-        <legend>Box Model</legend>
-        <ul>
-            <li>margin</li>
-            <li>border</li>
-            <li>padding</li>
-            <li>content</li>
-        </ul>
-    </fieldset>
+    </header>
+
+    <main>
+        <div class="cards" id="dia01">
+            <h3 class="title-day
+            ">Dia 01</h3>
+            <div class="content">
+                <fieldset>
+                    <legend>Seletores</legend>
+                    <p>Os seletores podem ser feito atraves de <b>classe e id</b>.</p>
+                    <h2>Classes</h2>
+                    <p></p>
+                    <h2>Ids</h2>
+                    <p>Mudar um elemento específico. Sem reaproveitamento
+                    </p>
+                    <br>
+                    <h2>Exemplificando:</h2>
+                    <h3>Lista de luas</h3>
+                    <ul>
+                        <li class="moon">Métis</li>
+                        <li class="moon">Adrasteia</li>
+                        <li class="moon">Tebe</li>
+                        <li class="yellow-text">Io</li>
+                        <li id="europe-text">Europa</li>
+                        <li>Ganímedes</li>
+                        <li>Calisto</li>
+                        <li>Temisto</li>
+                        <li class="big-text">+60</li>
+                    </ul>
+
+                </fieldset>
+
+            </div>
+        </div>
+        <div class="cards" id="dia02">
+            <h3 class="title-day
+            ">Dia 02</h3>
+            <div class="content">
+                <fieldset>
+                    <legend>Seletores mais Avançados</legend>
+                    <h2>Os seletores avançados são:</h2>
+                    <details>
+                        <summary>*</summary>
+                        <p>É o seletor estrela (star).
+                            Seleciona todos os elementos do documento e aplica o estilo.
+                            usado em poucos casos.
+                        </p>
+                    </details>
+                    <details>
+                        <summary>Seletor de descendencia</summary>
+                        <p>Ex: <b>li a {}</b> :neste caso é aplicado o estilo a todos os links descendentes do item da
+                            lista.</p>
+                    </details>
+                    <details>
+                        <summary>Seletor filho</summary>
+                        <p>utiliza na sintaxe o ></p>
+                        <p>
+                            Ex: <b>li > a {}</b> : todo link, filho de li, recebe estilo x.</p>
+                    </details>
+                    <details>
+                        <summary>Seletor adjacente</summary>
+                        <p>Ex: <b>h1 + h4 {}</b> :Todo h4 que vem logo após o h1</p>
+                    </details>
+                    <details>
+                        <summary>Seletor de atributo</summary>
+                        <p>Ex: <b>a[href='/recibo'] {} </b> : Busca, em todas as ancoras, um href igual ao meu</p>
+                    </details>
+                    <details>
+                        <summary>Pseudo-classe</summary>
+                        <p>Ex: <b>li:nth-of-type(2)</b> : Todos os li que sejam segundo.</p>
+                    </details>
+                    <h2>Exemplificando</h2>
+                    <div>
+                        <h3>Comunicação via satélite</h3>
+                        <ul>
+                            <li>$10.010,00</li>
+                            <li>$20.008,00</li>
+                            <li>$10.012,50</li>
+                        </ul>
+                        <h3>Ajustes da rota</h3>
+                        <ul>
+                            <li><a href="#">$30.007,00</a></li>
+                            <li><a href="#">$44.015,00</a></li>
+                            <li><a href="#">$34.012,00</a></li>
+                        </ul>
+
+                    </div>
+                </fieldset>
+                <fieldset>
+                    <legend>Especificidade</legend>
+                    <p>A especificidade determina quais regras CSS serão aplicadas.</p>
+                    <p>A ordem de especificidade é:</p>
+                    <ol>
+                        <li>Estilo Inline</li>
+                        <li>Id</li>
+                        <li>Classe, pseudo-cçasse e atributo</li>
+                        <li>Elemento, pseudo-elemento</li>
+                    </ol>
+                </fieldset>
+                <fieldset>
+                    <legend>Herança</legend>
+                    <p>Basicamente é os filhos herdando o estilo dos pais.</p>
+                    <p>Uma das opções, é utilizar a palavra <b>inherit</b>, como valor da propriedade.</p>
+                    <div>
+                        <h3>Planetas
+                        </h3>
+                        <ul>
+                            <li>Terra</li>
+                            <li>Marte</li>
+                            <li>Júpiter</li>
+                        </ul>
+                    </div>
+                </fieldset>
+                <fieldset>
+                    <legend>Textos e Fontes</legend>
+                    <p>Aplicada através da font-family e da generic-family</p>
+                    <h3>Font-family</h3>
+                    <ul>
+                        <li>Times</li>
+                        <li>Arial</li>
+                        <li>Courier</li>
+                    </ul>
+                    <h3>Generic-family</h3>
+                    <ul>
+                        <li>serif</li>
+                        <li>cursive</li>
+                        <li>fantasy</li>
+                        <li>monospace</li>
+                    </ul>
+                    <h3>Exemplificando:</h3>
+                    <p class="arial-family"><b>Família Arial</b>: Lorem ipsum dolor sit amet, consectetur adipisicing
+                        elit. Assumenda id itaque velit ipsa, debitis blanditiis placeat fuga? Soluta magni tempora
+                        omnis assumenda dolore, sapiente, consequatur rem obcaecati odio modi perferendis!</p>
+                    <p class="verdana-family"><b>Família Verdana</b>: Lorem ipsum dolor sit amet, consectetur
+                        adipisicing elit. Assumenda id itaque velit ipsa, debitis blanditiis placeat fuga? Soluta magni
+                        tempora omnis assumenda dolore, sapiente, consequatur rem obcaecati odio modi perferendis!</p>
+                    <h3>Outras propriedades</h3>
+                    <details>
+                        <summary>Font-size</summary>
+                        <p>Define o tamanho da fonte.</p>
+                    </details>
+                    <details>
+                        <summary>Font-weight</summary>
+                        <p>Define o peso da fonte.</p>
+                    </details>
+                    <details>
+                        <summary>Line-height</summary>
+                        <p>Muda o espaço entre as linhas</p>
+                    </details>
+                    <details>
+                        <summary>Text-align</summary>
+                        <p>Alinhamento dos textos.</p>
+                    </details>
+                </fieldset>
+            </div>
+        </div>
+        <div class="cards" id="dia03">
+            <h3 class="title-day
+            ">Dia 03</h3>
+            <div class="content">
+                <fieldset>
+                    <legend>Usando Google Fonts</legend>
+                    <a href="https://fonts.google.com/">Google Fontes</a>
+                    <p>Adicionado através de links.</p>
+                </fieldset>
+                <fieldset>
+                    <legend>Box Model</legend>
+                    <ul>
+                        <li>margin</li>
+                        <li>border</li>
+                        <li>padding</li>
+                        <li>content</li>
+                    </ul>
+                </fieldset>
+            </div>
+        </div>
+        <div class="cards" id="dia04">
+            <h3 class="title-day
+            ">Dia 04</h3>
+            <div class="content">
+            </div>
+        </div>
+        <div class="cards" id="dia05">
+            <h3 class="title-day
+            ">Dia 05</h3>
+            <div class="content">
+            </div>
+        </div>
+    </main>
+
 
 </body>
 

@@ -5,7 +5,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="/Semana 02/CSS/style.css">
+    <link rel="stylesheet" href="/Semana02/CSS/style.css">
     <title>CSS</title>
 </head>
 
@@ -290,9 +290,13 @@
                     <div>
                         <p style="background-color: blue; color: white;">Colorindo uma seção e sua fonte</p>
                     </div>
-                    <p>Também é possivel criar um background com imagens</p>
-                    <div style="background-image: url('/);"></div>
-
+                    <p>Também é possivel criar um background com imagens: <b> background-image</b> </p>
+                    <div style="background-image:url('/Semana02/CSS/landscape.jpg'); width: 100%; height: 400px;"></div>
+                    <p>Inserindo o background sem repetição: <b>bacground-repeat: no-repeat</b> </p>
+                    <div style="background-image:url('/Semana02/CSS/landscape.jpg'); width: 100%; height: 400px; background-repeat: no-repeat;"></div>
+                    <p>Inserindo uma posição através do <b>background-position</b> sendo os valores right, left,center, top-right, top-left</p>
+                    <div style="background-image:url('/Semana02/CSS/landscape.jpg'); width: 100%; height: 400px; background-repeat: no-repeat; background-position: right;"></div>
+                    
                 </fieldset>
                
             </div>
@@ -301,6 +305,59 @@
             <h3 class="title-day
             ">Dia 05</h3>
             <div class="content">
+                <fieldset>
+                    <legend>Dimensões</legend>
+                    <p>Trabalha com o tamanho dos elementos.</p>
+                    <ul>
+                        <li>Dimensão 01</li>
+                        <li>Dimensão 02</li>
+                        <li>Dimensão 03</li>
+                    </ul>
+                    <p>As divs possuem o comportamento de display block. Veja abaixo:</p>
+                    <div style="width: 150px; height: 150px; background-color: turquoise;"></div>
+                    <div style="width: 150px; height: 150px; background-color:violet;"></div>
+                    <div style="width: 150px; height: 150px; background-color:wheat;"></div>
+                    <br>
+                    <p>Ao colocar o display inline-block, as divs ficam um ao lado da outra.</p>
+                    <div style="width: 150px; height: 150px; display: inline-block; background-color: turquoise; "></div>
+                    <div style="width: 150px; height: 150px; display: inline-block; background-color:violet; "></div>
+                    <div style="width: 150px; height: 150px; background-color:wheat; display: inline-block;"></div>
+                    <br>
+                    <p>Utilizando o OverFlow</p>
+                    <div style="width: 150px; height: 150px; display: inline-block; background-color: turquoise; overflow: scroll; ">
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolore esse voluptate, dignissimos tempore harum odit libero nam rerum.
+                         Aliquam perspiciatis architecto adipisci laboriosam molestiae id inventore dicta accusantium odio libero.</p></div>
+                    
+                </fieldset>
+                <fieldset>
+                    <legend>Alinhamento, Margin e Padding</legend>
+                    <details>
+                        <summary>Alinhamento</summary>
+                    </details>
+                    <details>
+                        <summary>Margin</summary>
+                        <p>Aqui temos uma seção distanciada em 20px</p>
+                        <div style="width: 250px; height: auto; display: inline-block; margin: 20px; background-color: turquoise; ">
+                            <p style="padding: 20px;">Aqui temos um texto distanciado em 20 px para todos os lados</p></div>
+                        <p>Estes espaçamentos podem ser:</p>
+                        <ul>
+                            <li>margin-left</li>
+                            <li>margin-right</li>
+                            <li>margin-top</li>
+                            <li>margin-bottom</li>
+                        </ul>
+                    </details>
+                    <details>
+                        <summary>Padding</summary>
+                        <p>Utilizado para deixar um texto distanciado de sua seção</p>
+                        <div style="width: 250px; height: auto; display: inline-block; background-color: turquoise; ">
+                        <p style="padding: 20px;">Aqui temos um texto distanciado em 20 px para todos os lados</p></div>
+                    </details>
+                </fieldset>
+                <fieldset>
+                    <legend>Flexbox</legend>
+
+                </fieldset>
             </div>
         </div>
     </main>

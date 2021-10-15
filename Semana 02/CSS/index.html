@@ -29,17 +29,53 @@
 
     <main>
         <div class="cards" id="dia01">
-            <h3 class="title-day
-            ">Dia 01</h3>
+            <h3 class="title-day">Dia 01</h3>
             <div class="content">
                 <fieldset>
+                    <legend>História</legend>
+                    <p><strong>CSS</strong> é uma folha de estilo aplicada em cascata.</p>
+                    <details>
+                        <summary>CSS 1</summary>
+                        <p>Criado em 1996</p>
+                    </details>
+                    <details>
+                        <summary>CSS 2</summary>
+                        <p>Criado em 1998</p>
+                    </details>
+                    <details>
+                        <summary>CSS 3</summary>
+                        <p>Em desenvolvimento</p>
+                    </details>
+                </fieldset>
+                <fieldset>
+                    <legend>Anatomia do CSS</legend>
+                    <p>Consiste seletor + chaves e dentro da chaves propriedade + valor</p>
+                </fieldset>
+                <fieldset>
+                    <legend>Cores</legend>
+                    <p>As cores no CSS podem ser:</p>
+                    <ul>
+                        <li>rgb</li>
+                        <li>rgba</li>
+                    </ul>
+                </fieldset>
+                <fieldset>
                     <legend>Seletores</legend>
-                    <p>Os seletores podem ser feito atraves de <b>classe e id</b>.</p>
-                    <h2>Classes</h2>
-                    <p></p>
-                    <h2>Ids</h2>
-                    <p>Mudar um elemento específico. Sem reaproveitamento
-                    </p>
+                    <p>Os seletores podem ser feito atraves de:</p>
+                    <details>
+                        <summary>Classes</summary>
+                        <p>Reutilizar a estilização em outros elementos.</p>
+                    </details>
+                    <details>
+                        <summary>Ids</summary>
+                        <p>Mudar um elemento específico. Sem reaproveitamento</p>
+                        <p>Pode ser utilizado como âncora tambem.</p>
+                    </details>
+                    <details>
+                        <summary>Elementos</summary>
+                        <p></p>
+                    </details>
+                   
                     <br>
                     <h2>Exemplificando:</h2>
                     <h3>Lista de luas</h3>
@@ -73,6 +109,7 @@
                             usado em poucos casos.
                         </p>
                     </details>
+                    
                     <details>
                         <summary>Seletor de descendencia</summary>
                         <p>Ex: <b>li a {}</b> :neste caso é aplicado o estilo a todos os links descendentes do item da
@@ -91,10 +128,38 @@
                     <details>
                         <summary>Seletor de atributo</summary>
                         <p>Ex: <b>a[href='/recibo'] {} </b> : Busca, em todas as ancoras, um href igual ao meu</p>
+                        <p> o paragrafo tem name="paragrafo no HTML.
+                            Para colocar estilo no atributo, deve-se chamá-lo atraves de [name=paragrafo]{...}
+                            "</p>
                     </details>
                     <details>
                         <summary>Pseudo-classe</summary>
                         <p>Ex: <b>li:nth-of-type(2)</b> : Todos os li que sejam segundo.</p>
+                        <p>Ex: <b>.seletor:hover</b> : Aplicado quando o mouse do usuário passa por cima do componente.</p>
+                    </details>
+                    <details>
+                        <summary>Pseudo-elementos</summary>
+                        <p>Ex: <b>.seletor::first-letter</b>: Aplicando estilo a primeira letra</p>
+                        <p></p>
+                    </details>
+                    <details>
+                        <summary>Combinação de seletores</summary>
+                        <details>
+                            <summary>Filho</summary>
+                            <p>div > p</p>
+                        </details>
+                        <details>
+                            <summary>Descendente</summary>
+                            <p>div p</p>
+                        </details>
+                        <details>
+                            <summary>Irmao geral</summary>
+                            <p>div ~ p</p>
+                        </details>
+                        <details>
+                            <summary>Irmao adjacente</summary>
+                            <p>div + p</p>
+                        </details>
                     </details>
                     <h2>Exemplificando</h2>
                     <div>
@@ -110,8 +175,21 @@
                             <li><a href="#">$44.015,00</a></li>
                             <li><a href="#">$34.012,00</a></li>
                         </ul>
-
                     </div>
+                </fieldset>
+                <fieldset>
+                    <legend>Padrão de Nomenclatura</legend>
+                    <p>Padrão 1: dash-case</p>
+                    <p>Padrão 2: camelCase</p>
+                </fieldset>
+                <fieldset>
+                    <legend>CSS Interno, Externo e Inline</legend>
+                    <h3>CSS interno</h3>
+                    <p>Aplicado dentro da tag head.</p>
+                    <h3>CSS externo</h3>
+                    <p>Inportado atraves de <b>link:css</b> dentro do head.</p>
+                    <h3>CSS inline</h3>
+                    <p>Aplicado diretamente na tag.</p>
                 </fieldset>
                 <fieldset>
                     <legend>Especificidade</legend>
@@ -205,6 +283,18 @@
             <h3 class="title-day
             ">Dia 04</h3>
             <div class="content">
+                <fieldset>
+                    <legend>Cores e Backgrounds</legend>
+                    <p>Permite colorir fontes e seções.</p>
+                    <p style="color:red">Colorindo uma fonte</p>
+                    <div>
+                        <p style="background-color: blue; color: white;">Colorindo uma seção e sua fonte</p>
+                    </div>
+                    <p>Também é possivel criar um background com imagens</p>
+                    <div style="background-image: url('/);"></div>
+
+                </fieldset>
+               
             </div>
         </div>
         <div class="cards" id="dia05">

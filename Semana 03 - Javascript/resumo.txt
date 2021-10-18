@@ -1,0 +1,24 @@
+JAVASCRIPT
+
+Onde colocar o código javascript
+    - Colocar dentro da tag script, dentro do body
+    <body>
+        <script></script>
+    </body>
+
+    - colocar um arquivo externo script.js 
+    <link rel="stylesheet" href="style.css">
+
+    - colocar a tag script dentro do head 
+    <head>
+        <script src="script.js"></script>
+    </head>
+
+document.write("Escreve o documento na página")
+
+
+https://www.youtube.com/playlist?list=PLGwqoftZstLbwYNomwVgNHtWlJitUCiAz
+
+https://www.youtube.com/watch?v=IB92NTKTtWM&list=PLwXQLZ3FdTVF9Y0RbsuN54XYP7D0dZIlR&index=9
+
+https://www.youtube.com/watch?v=AWE_7Lwwbko&list=PLbEOwbQR9lqyuy7U1YjGgBv0x2Hzuw569&index=2

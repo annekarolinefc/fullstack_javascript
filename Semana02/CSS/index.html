@@ -75,7 +75,7 @@
                         <summary>Elementos</summary>
                         <p></p>
                     </details>
-                   
+
                     <br>
                     <h2>Exemplificando:</h2>
                     <h3>Lista de luas</h3>
@@ -109,7 +109,7 @@
                             usado em poucos casos.
                         </p>
                     </details>
-                    
+
                     <details>
                         <summary>Seletor de descendencia</summary>
                         <p>Ex: <b>li a {}</b> :neste caso é aplicado o estilo a todos os links descendentes do item da
@@ -135,7 +135,8 @@
                     <details>
                         <summary>Pseudo-classe</summary>
                         <p>Ex: <b>li:nth-of-type(2)</b> : Todos os li que sejam segundo.</p>
-                        <p>Ex: <b>.seletor:hover</b> : Aplicado quando o mouse do usuário passa por cima do componente.</p>
+                        <p>Ex: <b>.seletor:hover</b> : Aplicado quando o mouse do usuário passa por cima do componente.
+                        </p>
                     </details>
                     <details>
                         <summary>Pseudo-elementos</summary>
@@ -293,12 +294,17 @@
                     <p>Também é possivel criar um background com imagens: <b> background-image</b> </p>
                     <div style="background-image:url('/Semana02/CSS/landscape.jpg'); width: 100%; height: 400px;"></div>
                     <p>Inserindo o background sem repetição: <b>bacground-repeat: no-repeat</b> </p>
-                    <div style="background-image:url('/Semana02/CSS/landscape.jpg'); width: 100%; height: 400px; background-repeat: no-repeat;"></div>
-                    <p>Inserindo uma posição através do <b>background-position</b> sendo os valores right, left,center, top-right, top-left</p>
-                    <div style="background-image:url('/Semana02/CSS/landscape.jpg'); width: 100%; height: 400px; background-repeat: no-repeat; background-position: right;"></div>
-                    
+                    <div
+                        style="background-image:url('/Semana02/CSS/landscape.jpg'); width: 100%; height: 400px; background-repeat: no-repeat;">
+                    </div>
+                    <p>Inserindo uma posição através do <b>background-position</b> sendo os valores right, left,center,
+                        top-right, top-left</p>
+                    <div
+                        style="background-image:url('/Semana02/CSS/landscape.jpg'); width: 100%; height: 400px; background-repeat: no-repeat; background-position: right;">
+                    </div>
+
                 </fieldset>
-               
+
             </div>
         </div>
         <div class="cards" id="dia05">
@@ -319,15 +325,20 @@
                     <div style="width: 150px; height: 150px; background-color:wheat;"></div>
                     <br>
                     <p>Ao colocar o display inline-block, as divs ficam um ao lado da outra.</p>
-                    <div style="width: 150px; height: 150px; display: inline-block; background-color: turquoise; "></div>
+                    <div style="width: 150px; height: 150px; display: inline-block; background-color: turquoise; ">
+                    </div>
                     <div style="width: 150px; height: 150px; display: inline-block; background-color:violet; "></div>
                     <div style="width: 150px; height: 150px; background-color:wheat; display: inline-block;"></div>
                     <br>
                     <p>Utilizando o OverFlow</p>
-                    <div style="width: 150px; height: 150px; display: inline-block; background-color: turquoise; overflow: scroll; ">
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolore esse voluptate, dignissimos tempore harum odit libero nam rerum.
-                         Aliquam perspiciatis architecto adipisci laboriosam molestiae id inventore dicta accusantium odio libero.</p></div>
-                    
+                    <div
+                        style="width: 150px; height: 150px; display: inline-block; background-color: turquoise; overflow: scroll; ">
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolore esse voluptate, dignissimos
+                            tempore harum odit libero nam rerum.
+                            Aliquam perspiciatis architecto adipisci laboriosam molestiae id inventore dicta accusantium
+                            odio libero.</p>
+                    </div>
+
                 </fieldset>
                 <fieldset>
                     <legend>Alinhamento, Margin e Padding</legend>
@@ -337,8 +348,10 @@
                     <details>
                         <summary>Margin</summary>
                         <p>Aqui temos uma seção distanciada em 20px</p>
-                        <div style="width: 250px; height: auto; display: inline-block; margin: 20px; background-color: turquoise; ">
-                            <p style="padding: 20px;">Aqui temos um texto distanciado em 20 px para todos os lados</p></div>
+                        <div
+                            style="width: 250px; height: auto; display: inline-block; margin: 20px; background-color: turquoise; ">
+                            <p style="padding: 20px;">Aqui temos um texto distanciado em 20 px para todos os lados</p>
+                        </div>
                         <p>Estes espaçamentos podem ser:</p>
                         <ul>
                             <li>margin-left</li>
@@ -351,11 +364,86 @@
                         <summary>Padding</summary>
                         <p>Utilizado para deixar um texto distanciado de sua seção</p>
                         <div style="width: 250px; height: auto; display: inline-block; background-color: turquoise; ">
-                        <p style="padding: 20px;">Aqui temos um texto distanciado em 20 px para todos os lados</p></div>
+                            <p style="padding: 20px;">Aqui temos um texto distanciado em 20 px para todos os lados</p>
+                        </div>
                     </details>
                 </fieldset>
                 <fieldset>
                     <legend>Flexbox</legend>
+                    <details>
+                        <summary>Display Flex</summary>
+                        <p>Ao colocar uma div com display flex, todos os seus filhos (divs) se alinham um ao lado do
+                            outro.</p>
+                        <div class="container" style="display: flex; ">
+                            <div style="display: flex; background-color: bisque;">
+                                <p>Div com display Flex</p>
+                            </div>
+                            <div style="display: flex; background-color: rgb(146, 179, 85);">
+                                <p>Div com display Flex</p>
+                            </div>
+                            <div style="display: flex; background-color: rgb(170, 126, 172);">
+                                <p>Div com display Flex</p>
+                            </div>
+                        </div>
+                    </details>
+                    <details>
+                        <summary>Flex-direction</summary>
+                        <p>Ao colocar a direção como flex-direction: column, todas as divs ficam uma abaixo da outra</p>
+                        <div class="container" style="display: flex; flex-direction: column; ">
+                            <div style="display: flex; background-color: bisque;">
+                                <p>Div com display Flex</p>
+                            </div>
+                            <div style="display: flex; background-color: rgb(146, 179, 85);">
+                                <p>Div com display Flex</p>
+                            </div>
+                            <div style="display: flex; background-color: rgb(170, 126, 172);">
+                                <p>Div com display Flex</p>
+                            </div>
+                        </div>
+                    </details>
+                    <details>
+                        <summary>Align-items</summary>
+                        <p>Ao colocar align-items:center, as divs são alinhadas ao centro</p>
+                        <div class="container" style="display: flex; flex-direction: column; align-items: center; ">
+                            <div style="display: flex; background-color: bisque;">
+                                <p>Div com display Flex</p>
+                            </div>
+                            <div style="display: flex; background-color: rgb(146, 179, 85);">
+                                <p>Div com display Flex</p>
+                            </div>
+                            <div style="display: flex; background-color: rgb(170, 126, 172);">
+                                <p>Div com display Flex</p>
+                            </div>
+                        </div>
+                    </details>
+                    <details>
+                        <summary>Flex-wrap</summary>
+                        <div class="container" style="display: flex; flex-wrap: wrap; ">
+                            <div style="display: flex; background-color: bisque; width: 100%;">
+                                <p>Div com display Flex</p>
+                            </div>
+                            <div style="display: flex; background-color: rgb(146, 179, 85); width: 50%;">
+                                <p>Div com display Flex</p>
+                            </div>
+                            <div style="display: flex; background-color: rgb(170, 126, 172); width: 50%;">
+                                <p>Div com display Flex</p>
+                            </div>
+                        </div>
+                    </details>
+                    <details>
+                        <summary>Flex</summary>
+                        <div class="container" style="display: flex; flex-wrap: wrap; ">
+                            <div style="flex:0.4; background-color: bisque; width: 100%;">
+                                <p>Div com display Flex</p>
+                            </div>
+                            <div style="flex:0.2; background-color: rgb(146, 179, 85); width: 50%;">
+                                <p>Div com display Flex</p>
+                            </div>
+                            <div style="flex:0.4; background-color: rgb(170, 126, 172); width: 50%;">
+                                <p>Div com display Flex</p>
+                            </div>
+                        </div>
+                    </details>
 
                 </fieldset>
             </div>

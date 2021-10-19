@@ -18,9 +18,12 @@
             <li>Nasceu em 1995</li>
             <li>Criado por Brendan Eich</li>
             <li>Surgiu para dar mais dinamismo às páginas HTML, visto que apenas CSS e HTML deixavam as páginas
-                estáticas</li>
+                estáticas.</li>
+            <li>Usado principalmente para criar interfaces mais amigáveis.</li>
+            <li>Linguagem de programação executada diretamente no navegador.</li>
             <li>Possui múltiplos paradigmas: Orientada a objeto funcional, orientada a eventos</li>
-            <li>Possui tipagem dinâmica e fraca</li>
+            <li>Possui tipagem dinâmica e fraca.</li>
+            <li>Possui uma grande quantidade de bibliotecas que auxiliam durante o desenvolvimento.</li>
         </ul>
     </fieldset>
     <fieldset>
@@ -119,18 +122,84 @@
         <details>
             <summary>Comparação</summary>
             <img src="/Semana 03 - Javascript/images/operadorComparacao.png" alt="Operador de Comparação">
+            <h3>Comparação de dados</h3>
+            <p> - retorna um valor booleano.</p>
+            <p> - diferente das aritméticas, que retornam um valor numérico.</p>
+            <div style="background-color: bisque;">
+                let spaceship = "Golias"; <br>
+                let velocity = 80; <br>
+                console.log(velocity == 90); <span style="color: red">//FALSE</span> <br>
+                console.log(spaceship == "Golias"); <span style="color: red">//TRUE</span> <br>
+                console.log(velocity == "80"); <span style="color: red">//TRUE pq ignora o tipo de dado</span> <br>
+                console.log(velocity === "80"); <span style="color: red">//FALSE pq o tipo de dado é diferente</span>
+                <br>
+                console.log(velocity > 50); <span style="color: red">//TRUE</span>
+            </div>
+
         </details>
         <details>
             <summary>Lógica</summary>
+            <p>São expressões construídas a apartir de operações com valores booleanos <strong>TRUE ou FALSE</strong>.
+            </p>
+            <p>Também retornam um valor booleano.</p>
+            <p>Seguimos os resultados lógicos contidos na tabela verdade. A tabela verdade é resultado da combinação dos
+                dois valores booleanos em todas as combinações possiveis. </p>
+            <p>As operações básicas que temos na programação dão <strong>E(and), OU(or) e NÃO(not).</strong></p>
             <img src="/Semana 03 - Javascript/images/operadorLogico.png" alt="Operador Lógico">
+            <div style="background-color: bisque;">
+                let spaceship = "Golias"; <br>
+                let velocity = 80; <br>
+                console.log(spaceship.length == 6 && velocity > 90 ) <span style="color: red">V e V = V</span> <br>
+                console.log("velocity (> maior) 6 && velocity (menor) 70") <span style="color: red">V e F = F</span>
+                console.log(spaceship.length == 6 || velocity > 90 ) <span style="color: red">V ou V = V</span> <br>
+                console.log("velocity (> maior) 6 || velocity (menor) 70") <span style="color: red">V ou F = V</span>
+                console.log(!(velocity>4))<span style="color: red">inverte os valores: NÃO F -> vira verdadeiro
+                    (V)</span> <br>
+                console.log(!(spaceship == "Golias"))<span style="color: red">inverte os valores: NÃO V -> vira falso
+                    (F)</span> <br>
+            </div>
+
         </details>
         <details>
             <summary>Condicional</summary>
+            <h3>Condicionais - if/else statements</h3>
+            <p>São blocos de códigos que são executados baseado no resultado d euma expressão lógica.</p>
+            <p>Também são chamados de <b>Controle de Fluxo</b>.</p>
+            <p>Podem direcionar a aplicação por um determinado fluxo com base no valor das expressões.</p>
             <img src="/Semana 03 - Javascript/images/operadorCondicional.png" alt="Operador Condicional">
+            <p>If condition{...} else {...}</p>
+            <div style="background-color: bisque;">
+                <p>let velocity = 80;</p>
+                <p>if velocity &lt 40 {</p>
+                <p>console.log("Velocidade baixa")</p>
+                <p>}else{</p>
+                <p>console.log("Entrando em velocidade de risco.") }</p>
+            </div>
+
+            <h3>Condicionais - switch</h3>
+            <p>Estrutura de <b>Controle de Fluxo</b>.</p>
+            <p>Avalia uma expressão.</p>
+            <p>Procura a mlehor cláusula (caso) que atende ao resultado.</p>
+            <p>As cláusulas, ou casos são chamados de cases.</p>
+            <div style="background-color: bisque;">
+                <p>let velocity = 80</p>
+                <p>switch (velocity * 2) {</p>
+                <p>case 100:</p>
+                <p>console.log("Sua velocidade é 100km/s")</p>
+                <p>break</p>
+                <p>case 160:</p>
+                <p>console.log("Sua velocidade é 160km/s")</p>
+                <p>break</p>
+                <p>default:</p>
+                <p>console.log("Velocidade não identificada.")</p>
+                <p>}</p>
+            </div>
+
         </details>
         <details>
             <summary>(...)</summary>
-            <p>Operador de agrupamento! As operações netre colchetes sao executadas mais cedo do que aquelas de fora.</p>
+            <p>Operador de agrupamento! As operações netre colchetes sao executadas mais cedo do que aquelas de fora.
+            </p>
         </details>
     </fieldset>
 
@@ -141,7 +210,7 @@
             <summary>alert()</summary>
             <p>Dados de saída em uma caixa de alerta na janela do navegador.</p>
             <div style="background-color: bisque;">
-               <p> Alert("Aqui tem um alerta.") </p>
+                <p> Alert("Aqui tem um alerta.") </p>
             </div>
         </details>
         <details>
@@ -156,21 +225,22 @@
             <p>Grava informações do console do navegador! Ótimo para propósitos de depuração.</p>
             <li>Console.log("") : imprime no console. Tonalidade neutra.</li>
             <div style="background-color: bisque;">
-            <p>console.log("Imprimindo uma mensagem!")</p>
-        </div>
+                <p>console.log("Imprimindo uma mensagem!")</p>
+            </div>
         </details>
         <details>
             <summary>Console.info</summary>
             <p>retorna uma mensagem no console com tonalidade diferente.</p>
             <div style="background-color: bisque;">
-               <p> Console.info("Estou passando uma informação.")</p>
+                <p> Console.info("Estou passando uma informação.")</p>
             </div>
         </details>
         <details>
             <summary>Console.warm</summary>
             <p>Imprime no console uma mensagem de urgencia</p>
             <div style="background-color: bisque;">
-            <p>console.warm("Aqui tem uma mensagem de urgência.")</p></div>
+                <p>console.warm("Aqui tem uma mensagem de urgência.")</p>
+            </div>
         </details>
         <details>
             <summary>Console.error</summary>
@@ -188,9 +258,9 @@
             <summary>prompt()</summary>
             <p>Cria um diálogo para a entrada do usuário. Recebe um valor do usuário.</p>
             <div style="background-color: bisque;">
-                prompt("Qual o seu nome?") 
+                prompt("Qual o seu nome?")
             </div>
-        </details>       
+        </details>
     </fieldset>
     <fieldset>
         <legend>Declarando Variáveis</legend>
@@ -300,11 +370,7 @@
             <p>document.querySelectorAll("nomeDaClasse")</p>
         </details>
     </fieldset>
-    <fieldset>
-        <legend>Condicionais</legend>
-        <h3>Condicionais - if/else statements</h3>
-        <p>If condidtion{...} else {...}</p>
-    </fieldset>
+
     <fieldset>
         <legend>Loops</legend>
         <h3>Loops</h3>
@@ -313,7 +379,7 @@
             <p>A maneira mais comum de criar um loop em JavaScript.</p>
             <p>for(before loop; condition for loop; execute after loop){
                 ...
-            }
+                }
             </p>
         </details>
         <details>
@@ -322,7 +388,8 @@
         </details>
         <details>
             <summary>do while</summary>
-            <p>Semelhante ao loop while, no entando, ele executa pelo menos uma vez e realiza uma verificação para ver se a condição foi atendida pa ra executar novamente.</p>
+            <p>Semelhante ao loop while, no entando, ele executa pelo menos uma vez e realiza uma verificação para ver
+                se a condição foi atendida pa ra executar novamente.</p>
         </details>
         <details>
             <summary>break</summary>
@@ -333,6 +400,7 @@
             <p>Pula partes do ciclo se certas condições forem atendidas.</p>
         </details>
     </fieldset>
+
     <fieldset>
         <legend>Funções</legend>
         <h3>Funções</h3>
@@ -367,7 +435,8 @@
             <div style="background-color: bisque;">
                 <p>const uri = "https://www.google.com/"</p>
                 <p>const encoded = encodeURI(uri)</p>
-                <p>console.log(encoded.)</p></div>
+                <p>console.log(encoded.)</p>
+            </div>
         </details>
         <details>
             <summary>encoreURIComponent()</summary>
@@ -378,8 +447,8 @@
             <summary>eval()</summary>
             <p>Avalia o código Javascript representando como uma string.</p>
             <div style="background-color: bisque;">
-            eval(string)
-            eval("2 + 2") // retornar 4
+                eval(string)
+                eval("2 + 2") // retornar 4
             </div>
         </details>
         <details>
@@ -396,8 +465,8 @@
             <summary>isNaN()</summary>
             <p>Determina se um valor é NaN ou não.</p>
             <div style="background-color: bisque;">
-            <p>isNaN(true) //retorna true</p>
-            <p>isNaN(37) //retorna false</p>
+                <p>isNaN(true) //retorna true</p>
+                <p>isNaN(37) //retorna false</p>
             </div>
         </details>
         <details>
@@ -429,7 +498,7 @@
             <summary>Concat()</summary>
             <p>Utilizado para unir vários arrays em um só.</p>
             <div style="background-color: bisque;">
-                <p>var fruit1 = ["banana", "apple", "pear"];</p> 
+                <p>var fruit1 = ["banana", "apple", "pear"];</p>
                 <p>var fruit2 = ["orange", "stranberry"]; </p>
                 <p>var totalFruits = fruit1.concat(fruit2);</p>
                 <p>console.log(`Array de frutas 01: ${fruit1}`);</p>
@@ -443,7 +512,7 @@
             <div style="background-color: bisque;">
                 <p>var Totalfruits = ["banana", "apple", "pear"];</p>
                 <p>console.log(totalFruits.indexOf("apple")) </p>
-                
+
             </div>
             <p>Neste caso, retorna 1, pois maça esta no indice 01. </p>
         </details>
@@ -537,7 +606,9 @@
                 <p>// arr is [0, 1, 2]</p>
                 <p>arr.unshift(-2, -1); // = 5</p>
                 <p>// arr is [-2, -1, 0, 1, 2]</p>
-                <p>arr.unshift([-3]); // arr is [[-3], -2, -1, 0, 1, 2]</div></p>
+                <p>arr.unshift([-3]); // arr is [[-3], -2, -1, 0, 1, 2]
+            </div>
+            </p>
         </details>
         <details>
             <summary>valueOf()</summary>

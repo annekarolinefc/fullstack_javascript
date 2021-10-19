@@ -1,0 +1,800 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Javascript</title>
+    <link rel="stylesheet" href="/Semana03/style.css">
+</head>
+
+<body>
+    <header>
+        <h1>Semana 03/08</h1>
+        <h2>Estudos dedicados ao HTML</h2>
+        <div class="buttons-route">
+            <button><a href="/Roteiro Completo/index.html">Ver Roteiro</a></button>
+            <button><a href="/index.html">Tela Inicial</a></button>
+        </div>
+        <div class="buttons-day">
+            <button class="buttons__day"><a href="#dia01">Dia 01</a></button>
+            <button class="buttons__day"><a href="#dia02">Dia 02</a></button>
+            <button class="buttons__day"><a href="#dia03">Dia 03</a></button>
+            <button class="buttons__day"><a href="#dia04">Dia 04</a></button>
+            <button class="buttons__day"><a href="#dia05">Dia 05</a></button>
+        </div>
+    </header>
+
+    <main>
+        <div class="cards" id="dia01">
+            <h3 class="title-day
+        ">Dia 01</h3>
+            <div class="content">
+                <fieldset>
+                    <legend>Javascript</legend>
+                    <h3>Javascript</h3>
+                    <ul>
+                        <li>Nasceu em 1995</li>
+                        <li>Criado por Brendan Eich</li>
+                        <li>Surgiu para dar mais dinamismo às páginas HTML, visto que apenas CSS e HTML deixavam as
+                            páginas
+                            estáticas.</li>
+                        <li>Usado principalmente para criar interfaces mais amigáveis.</li>
+                        <li>Linguagem de programação executada diretamente no navegador.</li>
+                        <li>Possui múltiplos paradigmas: Orientada a objeto funcional, orientada a eventos</li>
+                        <li>Possui tipagem dinâmica e fraca.</li>
+                        <li>Possui uma grande quantidade de bibliotecas que auxiliam durante o desenvolvimento.</li>
+                    </ul>
+                </fieldset>
+                <fieldset>
+                    <legend>Incluindo Javascript em uma página HTML</legend>
+                    <details>
+                        <summary>Em uma tag script dentro do body</summary>
+                        <p>Tag script, do type="text/javascript"</p>
+                        <p>Colocamos o código dentro da tag.</p>
+                    </details>
+                    <details>
+                        <summary>Arquivo externo</summary>
+                        <p>Colocamos todo o codigo dentro de um arquivo externo: script.js</p>
+                        <p>Chamamos esse arquivo dentro do head do HTML. Chamamos o script src="script.js"</p>
+                    </details>
+                </fieldset>
+                <fieldset>
+                    <legend>Primeiros passos</legend>
+                    <h3>Primeiros Passos</h3>
+                    <h4>Tipos primitivos</h4>
+                    <p>É a base do código.</p>
+                    <details>
+                        <summary>Tipo Number</summary>
+                        <p>Usado para fazer uma representação numérica.</p>
+                        <p>Exemplo: <b>var age = 28</b></p>
+                    </details>
+                    <details>
+                        <summary>Tipo String</summary>
+                        <p>É uma carreira de caracteres.</p>
+                        <p>Exemplo: <b>var a = "azul"</b></p>
+                    </details>
+                    <details>
+                        <summary>Tipo Boolean</summary>
+                        <p>True ou False</p>
+                        <p>Exemplo:<b>estaAcessa = false;</b></p>
+                    </details>
+                    <details>
+                        <summary>Tipo Null</summary>
+                        <p>Quer dizer nada. É diferente de zero.</p>
+                    </details>
+                    <details>
+                        <summary>Tipo Undefined</summary>
+                        <p>Utilizado quando nao define um tipo</p>
+                    </details>
+                </fieldset>
+                <fieldset>
+                    <legend>Objects</legend>
+                    <p>var name = {firstName: "Anne", lastName: "Carmo", age: "29", nationality: "Brasil"};</p>
+                </fieldset>
+                <fieldset>
+                    <legend>Tipos de Operadores</legend>
+                    <details>
+                        <summary>Aritmética</summary>
+                        <img src="/Semana 03 - Javascript/images/operadorAritmetica.png" alt="Operador de Aritmética">
+                    </details>
+                    <details>
+                        <summary>Atribuição</summary>
+                        <img src="/Semana 03 - Javascript/images/operadorAtribuicao.png" alt="Operadores de atribuição">
+                        <table border="1">
+                            <thead>
+                                <tr>
+                                    <th>Operador</th>
+                                    <th>Exemplo</th>
+                                    <th>Equivalente a</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <th>=</th>
+                                    <th>x = y</th>
+                                    <th>x = y</th>
+                                </tr>
+                                <tr>
+                                    <th>+=</th>
+                                    <th>x += y</th>
+                                    <th>x = x + y</th>
+                                </tr>
+                                <tr>
+                                    <th>*=</th>
+                                    <th>x *= y</th>
+                                    <th>x = x * y</th>
+                                </tr>
+                                <tr>
+                                    <th>/=</th>
+                                    <th>x /= y</th>
+                                    <th>x = x / y</th>
+                                </tr>
+                                <tr>
+                                    <th>%=</th>
+                                    <th>x %= y</th>
+                                    <th>x = x % y</th>
+                                </tr>
+                            </tbody>
+                        </table>
+
+                    </details>
+                    <details>
+                        <summary>Comparação</summary>
+                        <img src="/Semana 03 - Javascript/images/operadorComparacao.png" alt="Operador de Comparação">
+                        <h3>Comparação de dados</h3>
+                        <p> - retorna um valor booleano.</p>
+                        <p> - diferente das aritméticas, que retornam um valor numérico.</p>
+                        <div style="background-color: bisque;">
+                            let spaceship = "Golias"; <br>
+                            let velocity = 80; <br>
+                            console.log(velocity == 90); <span style="color: red">//FALSE</span> <br>
+                            console.log(spaceship == "Golias"); <span style="color: red">//TRUE</span> <br>
+                            console.log(velocity == "80"); <span style="color: red">//TRUE pq ignora o tipo de
+                                dado</span> <br>
+                            console.log(velocity === "80"); <span style="color: red">//FALSE pq o tipo de dado é
+                                diferente</span>
+                            <br>
+                            console.log(velocity > 50); <span style="color: red">//TRUE</span>
+                        </div>
+
+                    </details>
+                    <details>
+                        <summary>Lógica</summary>
+                        <p>São expressões construídas a apartir de operações com valores booleanos <strong>TRUE ou
+                                FALSE</strong>.
+                        </p>
+                        <p>Também retornam um valor booleano.</p>
+                        <p>Seguimos os resultados lógicos contidos na tabela verdade. A tabela verdade é resultado da
+                            combinação dos
+                            dois valores booleanos em todas as combinações possiveis. </p>
+                        <p>As operações básicas que temos na programação dão <strong>E(and), OU(or) e NÃO(not).</strong>
+                        </p>
+                        <img src="/Semana 03 - Javascript/images/operadorLogico.png" alt="Operador Lógico">
+                        <div style="background-color: bisque;">
+                            let spaceship = "Golias"; <br>
+                            let velocity = 80; <br>
+                            console.log(spaceship.length == 6 && velocity > 90 ) <span style="color: red">V e V =
+                                V</span> <br>
+                            console.log("velocity (> maior) 6 && velocity (menor) 70") <span style="color: red">V e F =
+                                F</span>
+                            console.log(spaceship.length == 6 || velocity > 90 ) <span style="color: red">V ou V =
+                                V</span> <br>
+                            console.log("velocity (> maior) 6 || velocity (menor) 70") <span style="color: red">V ou F =
+                                V</span>
+                            console.log(!(velocity>4))<span style="color: red">inverte os valores: NÃO F -> vira
+                                verdadeiro
+                                (V)</span> <br>
+                            console.log(!(spaceship == "Golias"))<span style="color: red">inverte os valores: NÃO V ->
+                                vira falso
+                                (F)</span> <br>
+                        </div>
+
+                    </details>
+                    <details>
+                        <summary>Condicional</summary>
+                        <h3>Condicionais - if/else statements</h3>
+                        <p>São blocos de códigos que são executados baseado no resultado d euma expressão lógica.</p>
+                        <p>Também são chamados de <b>Controle de Fluxo</b>.</p>
+                        <p>Podem direcionar a aplicação por um determinado fluxo com base no valor das expressões.</p>
+                        <img src="/Semana 03 - Javascript/images/operadorCondicional.png" alt="Operador Condicional">
+                        <p>If condition{...} else {...}</p>
+                        <div style="background-color: bisque;">
+                            <p>let velocity = 80;</p>
+                            <p>if velocity &lt 40 {</p>
+                            <p>console.log("Velocidade baixa")</p>
+                            <p>}else{</p>
+                            <p>console.log("Entrando em velocidade de risco.") }</p>
+                        </div>
+
+                        <h3>Condicionais - switch</h3>
+                        <p>Estrutura de <b>Controle de Fluxo</b>.</p>
+                        <p>Avalia uma expressão.</p>
+                        <p>Procura a mlehor cláusula (caso) que atende ao resultado.</p>
+                        <p>As cláusulas, ou casos são chamados de cases.</p>
+                        <div style="background-color: bisque;">
+                            <p>let velocity = 80</p>
+                            <p>switch (velocity * 2) {</p>
+                            <p>case 100:</p>
+                            <p>console.log("Sua velocidade é 100km/s")</p>
+                            <p>break</p>
+                            <p>case 160:</p>
+                            <p>console.log("Sua velocidade é 160km/s")</p>
+                            <p>break</p>
+                            <p>default:</p>
+                            <p>console.log("Velocidade não identificada.")</p>
+                            <p>}</p>
+                        </div>
+
+                    </details>
+                    <details>
+                        <summary>(...)</summary>
+                        <p>Operador de agrupamento! As operações netre colchetes sao executadas mais cedo do que aquelas
+                            de fora.
+                        </p>
+                    </details>
+                </fieldset>
+
+                <fieldset>
+                    <legend>Recursos Nativos do Browser</legend>
+                    <h3>Outputting Data</h3>
+                    <details>
+                        <summary>alert()</summary>
+                        <p>Dados de saída em uma caixa de alerta na janela do navegador.</p>
+                        <div style="background-color: bisque;">
+                            <p> Alert("Aqui tem um alerta.") </p>
+                        </div>
+                    </details>
+                    <details>
+                        <summary>confirm()</summary>
+                        <p>Abre uma xaica de diálago com sim/não e retorna verdade/falso dependendo da interação do
+                            usuário.</p>
+                        <div style="background-color: bisque;">
+                            <p>confirm("Nave printa para decolagem. Aguardando confirmação!")</p>
+                        </div>
+                    </details>
+                    <details>
+                        <summary>console.log()</summary>
+                        <p>Grava informações do console do navegador! Ótimo para propósitos de depuração.</p>
+                        <li>Console.log("") : imprime no console. Tonalidade neutra.</li>
+                        <div style="background-color: bisque;">
+                            <p>console.log("Imprimindo uma mensagem!")</p>
+                        </div>
+                    </details>
+                    <details>
+                        <summary>Console.info</summary>
+                        <p>retorna uma mensagem no console com tonalidade diferente.</p>
+                        <div style="background-color: bisque;">
+                            <p> Console.info("Estou passando uma informação.")</p>
+                        </div>
+                    </details>
+                    <details>
+                        <summary>Console.warm</summary>
+                        <p>Imprime no console uma mensagem de urgencia</p>
+                        <div style="background-color: bisque;">
+                            <p>console.warm("Aqui tem uma mensagem de urgência.")</p>
+                        </div>
+                    </details>
+                    <details>
+                        <summary>Console.error</summary>
+                        <p>Imprime um erro de execução, por exemplo.</p>
+                        <div style="background-color: bisque;">
+                            <p>console.error("Aqui apresenta um erro de execução.")</p>
+                        </div>
+                    </details>
+                    <details>
+                        <summary>document.write()</summary>
+                        <p>Escreve diretamente no documento HTML.</p>
+                        <div style="background-color: bisque;"></div>
+                    </details>
+                    <details>
+                        <summary>prompt()</summary>
+                        <p>Cria um diálogo para a entrada do usuário. Recebe um valor do usuário.</p>
+                        <div style="background-color: bisque;">
+                            prompt("Qual o seu nome?")
+                        </div>
+                    </details>
+                </fieldset>
+                <fieldset>
+                    <legend>Declarando Variáveis</legend>
+
+                    <details>
+                        <legend>Var</legend>
+                        <h3>Var</h3>
+                        <p>Variáveis são dados em algum endereço da memória.</p>
+                        <p>Var possui um <b>escopo de bloco</b></p>
+                        <p>var = ... </p>
+                        <p><b>VAR </b>é a variável mais comum.
+                            Pode ser reatribuido um valor, mas é acessado apenas dentro de uma função.</p>
+                        <p>As variáveis definidas como var, movem-se para o topo quando o código é executado</p>
+                        <details>
+                            <summary>EXEMPLO</summary>
+                            <p>Console.log(name);</p>
+                            <p>var name = "Anne";</p>
+                            <p>Neste caso, a variável var vai para o topo, e o console imprime seu valor atribuido. </p>
+                        </details>
+                        <p>var é semelhante ao let.</p>
+                    </details>
+                    <details>
+                        <summary>Let</summary>
+                        <h3>Let</h3>
+                        <p>let spaceship = "FE Supernova"</p>
+                        <p>spaceship = "FE Helet"</p>
+                        <p>Percebe-se que é possivel atribuir um novo valor a variável ja declarada, mas nao pode ser
+                            redeclarada.
+                        </p>
+                        <p>É semelhante ao const, isto é, so pode ser acessada apos aparecer no código.</p>
+
+                    </details>
+                    <details>
+                        <summary>Const</summary>
+                        <h3>Const</h3>
+                        <p>const squad = "Estelar"</p>
+                        <p>So pode receber atribuição uma vez, isto é, a conts nao pode ser reatribuidos e não podem ser
+                            acessados
+                            antes que apareçam dentro do código.</p>
+                        <br>
+                    </details>
+
+                    <h3>Exemplos de uso</h3>
+                    let pilot = prompt("Qual o seu nome?");
+                    console.log(pilot)
+                    <h3>Tipos de uso</h3>
+                    <ol>
+                        <li>Original Variable as String: some awesome var</li>
+                        <li>Camel Case: someAwesomeVar</li>
+                        <li>Snake Case: some_awesome_var</li>
+                        <li>Kebab Case: some-awesome-var</li>
+                        <li>Pascal Case: SomeAwesomeVar</li>
+                        <li>Upper Case Snake Case: SOME_AWESOME_VAR</li>
+                    </ol>
+                </fieldset>
+                <fieldset>
+                    <legend>Comentários em JS</legend>
+                    <p>Os comentários são feitos atraves:</p>
+                    <ul>
+                        <li> // : comentário de uma linha. <b>Single line comments</b></li>
+                        <li> /*...*/ : comentários de várias linhas. <b>Multi-line comments</b></li>
+                    </ul>
+                    <p>Os comentários são ignorados pelo interpretador do código.</p>
+                </fieldset>
+                <fieldset>
+                    <legend>Janela de alerta</legend>
+                    <p>window.alert("Olá")</p>
+                </fieldset>
+                <fieldset>
+                    <legend>Escrevendo na tela com JS</legend>
+                    <p>Para escrever na tela, podemos utilizar o document.write("escreva o texto aqui")</p>
+                </fieldset>
+                <fieldset>
+                    <legend>Manipulando um elemento</legend>
+                    <p>Eu possuo uma div com id="title"</p>
+                    <p>Para alterar esse elemento, eu devo digitar: window.document.getElementById("title").innerHTML =
+                        "Opa, tudo
+                        bem?"</p>
+
+                </fieldset>
+                <fieldset>
+                    <legend>BOM: Browser Object Model</legend>
+                    <img src="/Semana 03 - Javascript/download (1).png" alt="">
+                    <p>O DOM faz parte do BOM. Toda a manipulação da página é realiada através do DOM.</p>
+                    <details>
+                        <summary>getElementById</summary>
+                        <p>Contexto: criou uma div e colocou o id="fruta". O valor dentro da div era a String Laranja.
+                            document.getElementById("fruta"): acessou o elemento pelo id
+                            document.getElementById("fruta").innerHTML : para pegar o conteudo, basta acrescentar o
+                            innerHTML
+                        </p>
+                    </details>
+                    <details>
+                        <summary>getElementByClass</summary>
+                        <p>Contexto: criou uma div e colocou a class="carro". O valor dentro da div era a String
+                            Laranja.
+                            document.getElementsByClassName("carro"): acessou o elemento pela classe
+                            document.getElementsByClassName("carro").innerHTML : para pegar o conteudo, basta
+                            acrescentar o
+                            innerHTML
+                        </p>
+                    </details>
+                    <details>
+                        <summary>getElementByTagName</summary>
+                        <p>document.getElementsByTagName("p")</p>
+                    </details>
+                    <details>
+                        <summary>querySelector()</summary>
+                        <p>Retorna sempre o primeiro elemento que encontrar.</p>
+                    </details>
+                    <details>
+                        <summary>querySelectorAll()</summary>
+                        <p>document.querySelectorAll("nomeDaClasse")</p>
+                    </details>
+                </fieldset>
+            </div>
+        </div>
+        <div class="cards" id="dia02">
+            <h3 class="title-day
+        ">Dia 02</h3>
+            <div class="content">
+                <fieldset>
+                    <legend>Loops</legend>
+                    <h3>Loops</h3>
+                    <details>
+                        <summary>for</summary>
+                        <p>A maneira mais comum de criar um loop em JavaScript.</p>
+                        <p>for(before loop; condition for loop; execute after loop){
+                            ...
+                            }
+                        </p>
+                    </details>
+                    <details>
+                        <summary>while</summary>
+                        <p>Define as condições sob as quais o loop executa.</p>
+                    </details>
+                    <details>
+                        <summary>do while</summary>
+                        <p>Semelhante ao loop while, no entando, ele executa pelo menos uma vez e realiza uma
+                            verificação para
+                            ver
+                            se a condição foi atendida pa ra executar novamente.</p>
+                    </details>
+                    <details>
+                        <summary>break</summary>
+                        <p>Usado para parar e sair do ciclo em condições certas.</p>
+                    </details>
+                    <details>
+                        <summary>continue</summary>
+                        <p>Pula partes do ciclo se certas condições forem atendidas.</p>
+                    </details>
+                </fieldset>
+            </div>
+        </div>
+        <div class="cards" id="dia03">
+            <h3 class="title-day">Dia 03</h3>
+            <div class="content">
+            </div>
+        </div>
+        <div class="cards" id="dia04">
+            <h3 class="title-day">Dia 04</h3>
+            <div class="content">
+            </div>
+        </div>
+        <div class="cards" id="dia05">
+            <h3 class="title-day">Dia 05</h3>
+            <div class="content">
+            </div>
+        </div>
+
+
+
+
+
+        <fieldset>
+            <legend>Funções</legend>
+            <h3>Funções</h3>
+            <p>A estrutura de uma função possui:</p>
+            <ol>
+                <li>Palavra reservada <b>Function</b></li>
+                <li>Nome da função</li>
+                <li>Pode ter parametros ou não</li>
+            </ol>
+        </fieldset>
+        <fieldset>
+            <legend>Funções Globais</legend>
+            <h3>Funções Globais</h3>
+            <p>Documentação de todos os objetos nativos do JavaScript padrão, assim como seus métodos e propriedades.
+            </p>
+            <details>
+                <summary>decoreURI()</summary>
+                <p>Decodifica um Identificador Uniforme de Recursos (URI) criado por encodeURI ou similar.</p>
+                <div style="background-color: bisque;">
+                    <p>const uri = "https://www.google.com/"</p>
+                    <p>const encoded = encodeURI(uri)</p>
+                    <p>console.log(encoded.)</p>
+                </div>
+            </details>
+            <details>
+                <summary>decoreURIComponent()</summary>
+                <p>Decodifica um componente URI.</p>
+                <div style="background-color: bisque;"></div>
+            </details>
+            <details>
+                <summary>encoreURI()</summary>
+                <p>Codifica um URI em UTF-8.</p>
+                <div style="background-color: bisque;">
+                    <p>const uri = "https://www.google.com/"</p>
+                    <p>const encoded = encodeURI(uri)</p>
+                    <p>console.log(encoded.)</p>
+                </div>
+            </details>
+            <details>
+                <summary>encoreURIComponent()</summary>
+                <p>Codifica um componente URI, mas para componentes URI.</p>
+                <div style="background-color: bisque;"></div>
+            </details>
+            <details>
+                <summary>eval()</summary>
+                <p>Avalia o código Javascript representando como uma string.</p>
+                <div style="background-color: bisque;">
+                    eval(string)
+                    eval("2 + 2") // retornar 4
+                </div>
+            </details>
+            <details>
+                <summary>isFinite()</summary>
+                <p>Determina se um valor passado é um numero finito.</p>
+                <div style="background-color: bisque;">
+                    <p>isFinite(Infinity) //retorna false</p>
+                    <p>isFinite(0) //retorna true</p>
+                    <p>isFinite(Nan) //retorna false</p>
+                    <p>isFinite(10) //retorna true</p>
+                </div>
+            </details>
+            <details>
+                <summary>isNaN()</summary>
+                <p>Determina se um valor é NaN ou não.</p>
+                <div style="background-color: bisque;">
+                    <p>isNaN(true) //retorna true</p>
+                    <p>isNaN(37) //retorna false</p>
+                </div>
+            </details>
+            <details>
+                <summary>Number()</summary>
+                <p>Retorna um numero convertido de seu argumento.</p>
+                <p>Se o objeto nao pode ser convertido para número, é retornado NaN.</p>
+                <div style="background-color: bisque;"></div>
+            </details>
+            <details>
+                <summary>parseFloat()</summary>
+                <p>Analise um argumento e retorna um número de ponto flutuante.</p>
+                <div style="background-color: bisque;">
+                    <p>parseFloat(10)</p>
+                </div>
+            </details>
+            <details>
+                <summary>parseInt()</summary>
+                <p>Análisa seu argumento e retorna um inteiro.</p>
+                <div style="background-color: bisque;">
+                    <p>parseInt(10.2355, 1)</p>
+                </div>
+            </details>
+        </fieldset>
+        <fieldset>
+            <legend>Arrays</legend>
+            <p>var fruit = ["Banana", "Apple", "Pear"]</p>
+            <p>var nome = []; <b>- variável do tipo array</b></p>
+            <p>nome[0] = 'Anne'</p>
+            <p>nome[1] = 'Greice'</p>
+            <p>nome[2] = 'Luiz'</p>
+            <h3>Métodos do Array</h3>
+            <details>
+                <summary>Concat()</summary>
+                <p>Utilizado para unir vários arrays em um só.</p>
+                <div style="background-color: bisque;">
+                    <p>var fruit1 = ["banana", "apple", "pear"];</p>
+                    <p>var fruit2 = ["orange", "stranberry"]; </p>
+                    <p>var totalFruits = fruit1.concat(fruit2);</p>
+                    <p>console.log(`Array de frutas 01: ${fruit1}`);</p>
+                    <p>console.log(`Array de frutas 02: ${fruit2}`);</p>
+                    <p>console.log(totalFruits);</p>
+                </div>
+            </details>
+            <details>
+                <summary>indexOf()</summary>
+                <p>Retorna o tipo primitivo do objeto especificado</p>
+                <div style="background-color: bisque;">
+                    <p>var Totalfruits = ["banana", "apple", "pear"];</p>
+                    <p>console.log(totalFruits.indexOf("apple")) </p>
+
+                </div>
+                <p>Neste caso, retorna 1, pois maça esta no indice 01. </p>
+            </details>
+            <details>
+                <summary>Join()</summary>
+                <p>O método join() junta todos os elementos de um array em uma string, e retorna uma string.</p>
+                <p>Permite que você defina o tipo de separador através de [separador = " ... "]</p>
+                <div style="background-color: bisque;"></div>
+            </details>
+            <details>
+                <summary>lastIndexOf()</summary>
+                <p>Mostra a ultima posição do caractere que desejamos buscar.</p>
+                <div style="background-color: bisque;">
+                    <p>console.log("A ultima posição de r é: " + "palavra".lastIndexOf("r"))</p>
+                </div>
+            </details>
+            <details>
+                <summary>pop()</summary>
+                <p>Remove o ultimo elemento do array.</p>
+                <div style="background-color: bisque;">
+                    <p>var numeros = [1, 2, 3, 4]</p>
+                    <p>numeros.pop() </p>
+                    <p>console.log(numeros)</p>
+                </div>
+            </details>
+            <details>
+                <summary>push()</summary>
+                <p>Adiciona um elemento ao final do array</p>
+                <div style="background-color: bisque;">
+                    <p>numeros.push(4)</p>
+                    <p>console.log(numeros)</p>
+                </div>
+            </details>
+            <details>
+                <summary>reverse()</summary>
+                <p>Classifica os elementos em ordem decrescente.</p>
+                <div style="background-color: bisque;">
+                    <p>numeros.reverse()</p>
+                    <p>console.log(numeros)</p>
+                </div>
+            </details>
+            <details>
+                <summary>shift()</summary>
+                <p>Remove o primeiro elementos de um array.</p>
+                <div style="background-color: bisque;">
+                    <p>const array1 = [1, 2, 3];</p>
+                    <p>const firstElement = array1.shift();</p>
+                    <p>console.log(array1);</p>
+                    <p>console.log(firstElement);</p>
+                </div>
+            </details>
+            <details>
+                <summary>slice()</summary>
+                <p>Cria um novo array através de um array ja existente, isto é, faz uma copia de parte de um array.</p>
+                <div style="background-color: bisque;">
+                    <p>var frutasSupermercado = ["banana", "laranja", "limão", "maça"]</p>
+                    <p>var frutasCitricas = frutasSupermercado.slice(1, 3)</p>
+                    <p>console.log("As frutas citricas são: " + frutasCitricas)</p>
+                </div>
+            </details>
+            <details>
+                <summary>sort()</summary>
+                <p>Classifica os elementos em ordem alfabetica</p>
+                <div style="background-color: bisque;">
+                    <p>var alfabeto = ["b", "d", "a", "w", "m", "c", "y"]</p>
+                    <p>console.log("A ordem será: " + alfabeto.sort())</p>
+                </div>
+            </details>
+            <details>
+                <summary>splice()</summary>
+                <p>Adiciona um elemento na posição especificada podendo remover (ou não) elementos antigos</p>
+                <div style="background-color: bisque;">
+                    <p>frutasSupermercado = ["banana", "laranja", "limão", "maça"]</p>
+                    <p>frutasSupermercado.splice(4, 0, "maracujá")</p>
+                    <p>console.log("Somente adicionei um elemento na posição 04: " + frutasSupermercado);</p>
+                    <p>frutasSupermercado.splice(0, 1, "Abacaxi")</p>
+                    <p>console.log("Adicionei um elemento na posiçao 0 e removi um elemento: " + frutasSupermercado)</p>
+                </div>
+            </details>
+            <details>
+                <summary>toString()</summary>
+                <p>Converte elementos para String</p>
+                <div style="background-color: bisque;"></div>
+            </details>
+            <details>
+                <summary>unshift()</summary>
+                <p>Adiciona um ou mais elementos no incio de um array e retorna o numero de elementos</p>
+                <div style="background-color: bisque;">
+                    <p>var arr = [1, 2];</p>
+                    <p>arr.unshift(0); // result of call is 3, the new array length</p>
+                    <p>// arr is [0, 1, 2]</p>
+                    <p>arr.unshift(-2, -1); // = 5</p>
+                    <p>// arr is [-2, -1, 0, 1, 2]</p>
+                    <p>arr.unshift([-3]); // arr is [[-3], -2, -1, 0, 1, 2]
+                </div>
+                </p>
+            </details>
+            <details>
+                <summary>valueOf()</summary>
+                <p>Retorna o valor primitido de um objeto string</p>
+                <div style="background-color: bisque;">
+                    <p>var str = "Hello World!"</p>
+                    <p>console.log(str.valueOf())</p>
+                </div>
+            </details>
+        </fieldset>
+        <fieldset>
+            <legend>Objetos</legend>
+            <p>Representado pelo abre e fecha chaves.</p>
+            <p>var animal = {}</p> <span>//declarando um objeto</span>
+            <p>animal.nome = 'cachorro';</p>
+            <p>animal.peso = '24kg';</p>
+            <p>animal.idade = 5;</p>
+            <p>animal['idade'] = 6;</p>
+            <p>console.log(animal.idade)</p>
+        </fieldset>
+        <fieldset>
+            <legend>Tipo de variável</legend>
+            <p>Para identificar o tipo de variável utiliza-se o <b>typeof</b></p>
+            <p>var animal = {}</p>
+            <p>console.log(typeof(animal)) : irá retornar um objeto.</p>
+            <p>var car = [] : irá retornar um objeto.</p>
+        </fieldset>
+        <fieldset>
+            <legend>Métodos de String</legend>
+            <details>
+                <summary>charAt()</summary>
+                <p>Retorna um caractere em uma posição especificada dentro de um fragmento</p>
+                <div style="background-color: bisque;"></div>
+            </details>
+            <details>
+                <summary>charCodeAt()</summary>
+                <p>Dá a você o unicode de personagem nessa posição.</p>
+                <div style="background-color: bisque;"></div>
+            </details>
+            <details>
+                <summary>concat()</summary>
+                <p>Concatena(junta) duas ou mais strings em uma.</p>
+                <div style="background-color: bisque;"></div>
+            </details>
+            <details>
+                <summary>fromCharCode</summary>
+                <p>Retorna uma string criada a partir da sequência especificada de unidades de código UTF-16.</p>
+                <div style="background-color: bisque;"></div>
+            </details>
+            <details>
+                <summary>indexOf()</summary>
+                <p>Fornece a posição da primeira ocorrência de um texto especificado dentro de uma string.</p>
+                <div style="background-color: bisque;"></div>
+            </details>
+            <details>
+                <summary>lastIndexOf()</summary>
+                <p>O mesmo que indexOf(), mas com a última ocorrência, procurando para tras.</p>
+                <div style="background-color: bisque;"></div>
+            </details>
+            <details>
+                <summary>match()</summary>
+                <p>Recupera as correspondências de uma string em relação a um padrão de pesquisa.</p>
+                <div style="background-color: bisque;"></div>
+            </details>
+            <details>
+                <summary>replace()</summary>
+                <p>Encontre e substituia o texto especificado em uma string.</p>
+                <div style="background-color: bisque;"></div>
+            </details>
+            <details>
+                <summary>search()</summary>
+                <p>Executa uma pesquisa por texto correspondente e retorna seu posição.</p>
+                <div style="background-color: bisque;"></div>
+            </details>
+            <details>
+                <summary>slice()</summary>
+                <p>Extrai uma seção de uma string e a retorna como um novo fragmento.</p>
+                <div style="background-color: bisque;"></div>
+            </details>
+            <details>
+                <summary>split()</summary>
+                <p>Divide um objeto string em uma matriz de strings em uma posição especificada.</p>
+                <div style="background-color: bisque;"></div>
+            </details>
+            <details>
+                <summary>substr()</summary>
+                <p>Semelhante a slice(), mas extrai uma substring dependendo de um número especificado de caracteres.
+                </p>
+                <div style="background-color: bisque;"></div>
+            </details>
+            <details>
+                <summary>substring()</summary>
+                <p>Semelhante a slice(), mas não pode aceitar indices negativos.</p>
+                <div style="background-color: bisque;"></div>
+            </details>
+            <details>
+                <summary>toLowerCase()</summary>
+                <p>Converte a string em minusculas.</p>
+                <div style="background-color: bisque;"></div>
+            </details>
+            <details>
+                <summary>toUpperCase()</summary>
+                <p>Converte a string em maiusculas.</p>
+                <div style="background-color: bisque;"></div>
+            </details>
+            <details>
+                <summary>valeuOf()</summary>
+                <p>Retorna o valor primitivo(que nao tem prooriedades ou métodos) de um objeto string.</p>
+                <div style="background-color: bisque;"></div>
+            </details>
+        </fieldset>
+    </main>
+
+</body>
+
+</html>

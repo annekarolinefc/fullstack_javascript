@@ -10,3 +10,12 @@ if(a === 1){
 
 console.log(a); //11
 console.log(b); //2
+
+var string, number, bool;
+
+    string = "Anne";
+    number = 28;
+    bool = true;
+
+    alert("Olá " + string);
+    alert("Você tem " + number + " anos.")

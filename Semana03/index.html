@@ -298,11 +298,11 @@
                 </fieldset>
                 <fieldset>
                     <legend>Declarando Variáveis</legend>
-
+                    <p>Variáveis são áreas de memória que podem conter dados ou valores. O seu conteúdo pode variar em função das operações que serão realizadas.</p>
+                    <p>Os identificados são únicos, ou sejá, nao é possivel usar o mesmo identificador para variáveis diferentes.</p>
                     <details>
                         <legend>Var</legend>
                         <h3>Var</h3>
-                        <p>Variáveis são dados em algum endereço da memória.</p>
                         <p>Var possui um <b>escopo de bloco</b></p>
                         <p>var = ... </p>
                         <p><b>VAR </b>é a variável mais comum.
@@ -419,6 +419,9 @@
                 <fieldset>
                     <legend>Loops</legend>
                     <h3>Loops</h3>
+                    <p>Estruturas utilizadas para repetir um bloco de código.</p>
+                    <p>Pode ser um determinado número de vezes ou até que uma determinada condição seja atendida.</p>
+                    <p>Elas são:</p>
                     <details>
                         <summary>for</summary>
                         <p>A maneira mais comum de criar um loop em JavaScript.</p>
@@ -426,21 +429,36 @@
                             ...
                             }
                         </p>
+                        <p>ou...</p>
+                        <p>for (variavel; expressão; ação de controle){bloco de codigo}</p>
+                        <p>Com o for é possivel adicionar a variável que utilizaremos para controlar as iterações.</p>
+                    </details>
+                    <details>
+                        <summary>For in</summary>
+                        <p>Estrutura de repetição com propriedades de objetos.</p>
+                        <p>for (x in pessoa){console.log(pessoa[x])}</p>
+                        <p>Neste caso, pesso é um objeto e x representa a propriedade da pessoa.</p>
+                    </details>
+                    <details>
+                        <summary>For of</summary>
+                        <p>Cria um laço de repetição com conteúdos de uma variável ou array.</p>
+                        <p>for(x of nome){console.log(nome[x])}</p>
+                        <p>Mostra cada elemento do array, em suas repetições</p>
                     </details>
                     <details>
                         <summary>while</summary>
                         <p>Define as condições sob as quais o loop executa.</p>
+                        <p>while(expressão){bloco de código}</p>
                     </details>
                     <details>
                         <summary>do while</summary>
                         <p>Semelhante ao loop while, no entando, ele executa pelo menos uma vez e realiza uma
-                            verificação para
-                            ver
-                            se a condição foi atendida pa ra executar novamente.</p>
+                            verificação para ver se a condição foi atendida pa ra executar novamente.</p>
                     </details>
                     <details>
                         <summary>break</summary>
                         <p>Usado para parar e sair do ciclo em condições certas.</p>
+                    
                     </details>
                     <details>
                         <summary>continue</summary>
@@ -472,12 +490,20 @@
         <fieldset>
             <legend>Funções</legend>
             <h3>Funções</h3>
+            <p>Funções são blocos de código que executam uma tarefa em particular.</p>
             <p>A estrutura de uma função possui:</p>
             <ol>
                 <li>Palavra reservada <b>Function</b></li>
                 <li>Nome da função</li>
                 <li>Pode ter parametros ou não</li>
+                <li>Podem retornar valores</li>
             </ol>
+            <p>obs: as variáveis criadas dentro de uma função não são acessíveis fora dela. <b>Escopo local.</b></p>
+            <div style="background-color: bisque;">
+                <p>function soma(n1, n2) {return n1+n2;}</p>
+                <p>function NomeCompleto(nome, sobrenome){ var nc = nome + " " + sobrenome; return nc;</p>
+                <p>function media(n1, n2, n3, n4){ return (n1+n2+n3+n4)/4;}</p>
+            </div>
         </fieldset>
         <fieldset>
             <legend>Funções Globais</legend>
@@ -562,6 +588,7 @@
         <fieldset>
             <legend>Arrays</legend>
             <p>var fruit = ["Banana", "Apple", "Pear"]</p>
+            <p>var fruta = frutas[0];</p>
             <p>var nome = []; <b>- variável do tipo array</b></p>
             <p>nome[0] = 'Anne'</p>
             <p>nome[1] = 'Greice'</p>
@@ -694,6 +721,11 @@
         </fieldset>
         <fieldset>
             <legend>Objetos</legend>
+            <p>No mundo real, chamados determinadas coisas de objetos.</p>
+            <p>Carros tem caracteristicas em comum, como peso, potencia, cor ou marca. Cada carro em específico tem valores específicas para cada característica.</p>
+            <p>Além das caracteristicas, os carros tambem executam ações em comum: dar partida, trocar de marcha, frear ou desligar o motor.</p>
+            
+            
             <p>Representado pelo abre e fecha chaves.</p>
             <p>var animal = {}</p> <span>//declarando um objeto</span>
             <p>animal.nome = 'cachorro';</p>
@@ -793,6 +825,13 @@
                 <div style="background-color: bisque;"></div>
             </details>
         </fieldset>
+    <section>
+        <h3>Salvando arquivo</h3>
+        <p>se você digitar <b>.save nomeDoArquivo.js</b>, ele ira salvar todas as alterações recentes em um novo arquivo.</p>
+        <p>.exit para sair</p>
+        <h3>Acessando arquivos pelo navegador</h3>
+        <p>ao digitar no navegador <b>file:///</b> você acessa a unidade C do seu computador.</p>
+    </section>
     </main>
 
 </body>

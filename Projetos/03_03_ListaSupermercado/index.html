@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lista</title>
+</head>
+<body>
+    <main>
+        <header id="cabecalho">
+            <h1>Meu programa em Javascript</h1>
+        </header>
+    <section class="listaSection">
+        <p id="lista" style="background-color: burlywood;">
+            Lista será inserida aqui
+        </p>
+    </section>
+    <div class="buttons">
+        <input type="button" value="Adicionar Item" onclick="inserirItem(minhaLista)">
+        <input type="button" value="Remover Item" onclick="removerItem(minhaLista)">
+    </div>
+    </main>
+</body>
+<script>
+
+    //VARIAVELS
+    var minhaLista = ["Pera", "Banana", "Abacaxi", "Maça"];
+
+    //FUNÇÕES
+    function exibirLista(arr){
+
+        var textoRetorno = "";
+
+        for(i=0; i<=arr.length-1; i++){
+
+            textoRetorno += i + " - " + arr[i] + "<br>";
+
+        }
+
+        document.getElementById("lista").innerHTML = textoRetorno;
+    }
+    function inserirItem(arr){
+        var novoItem = prompt("Digite um novo item: ")
+        if(novoItem!=null && novoItem!=""){
+            arr.push(novoItem); //adicionando novo item
+        } else{
+            alert("Nenhum item foi digitado!")
+        }
+        exibirLista(minhaLista); //exibindo os itens atualizados
+    }
+
+    function removerItem(arr){
+        var item = prompt("Digite o número do item a ser removido: ")
+        if(item!=null && item!=""){
+        arr.splice(item, 1); //remove o item e remove somente 1
+        }else{
+            alert("Nenhum item foi digitado!");
+        } 
+        exibirLista(minhaLista); //exibindo os itens atualizados
+    }
+    //Chamando funções
+    exibirLista(minhaLista);
+
+</script>
+</html>

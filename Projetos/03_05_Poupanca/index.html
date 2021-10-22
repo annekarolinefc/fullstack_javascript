@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Poupança</title>
+    <!--Simulaçao da movimentação de uma conta poupança-->
+    <style>
+        body {
+            border: 1px solid chartreuse;
+            width: 80%;
+            margin: 20px auto;
+            border-radius: 30px;
+        }
+
+        main,
+        header {
+            text-align: center;
+            margin: 0px auto;
+        }
+
+        .saldoBancario {
+            background-color: chartreuse;
+            width: 30%;
+            text-align: center;
+            border: 1px solid black;
+            border-radius: 5px;
+            padding: 3px;
+            margin: 0px auto;
+        }
+
+        #saldo {
+            font-weight: 900;
+        }
+
+        #valor {
+            border: 1px solid rgb(31, 59, 3);
+            border-radius: 5px;
+            padding: 2px;
+            margin-bottom: 15px;
+        }
+
+        .button-style {
+            background-color: white;
+            border: 1px solid chartreuse;
+            color: black;
+            font-weight: 700;
+            border-radius: 4px;
+            margin-right: 20px;
+            padding: 4px 20px;
+        }
+
+        .button-style:hover {
+            background-color: chartreuse;
+            color: black;
+            transform: scale(1.05);
+            border-color: black;
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <h1 id="titulo">Minha Poupança</h1>
+        <!--
+            <h3 id="hora">Horário exibido aqui futuramente</h3>
+        -->
+    </header>
+    <main>
+        <div class="saldoBancario">
+            <span>Saldo:</span>
+            <span>R$</span>
+            <span id="saldo">0,00</span>
+        </div>
+
+        <p class="acoes">
+            <input id="valor">
+            <br>
+            <input class="button-style" type="button" value="Depósito" onclick="poupanca.depositar();">
+            <input class="button-style" type="button" value="Saque" onclick="poupanca.sacar();">
+            <input class="button-style" type="button" value="Extrato" onclick="poupanca.exibirExtrato();">
+        </p>
+        <p class="extrato">
+            Extrato
+        </p>
+    </main>
+</body>
+<script>
+    //INTERAÇÃO DO SCRIPT COM O HTML
+    var saidaSaldo = document.getElementById("saldo");
+    var saidaExtrato = document.getElementById("extrato");
+    var valorHTML = document.getElementById("valor");
+
+    //Criação do objeto poupança
+    var poupanca = {
+        saldo: 0,
+        movimentacao: [],
+
+        depositar: function () {
+            //capturando do HTML o valor. Ler o conteudo da caixa de texto.
+            this.saldo += Number(valorHTML.value);
+            console.log(saldo);
+            //exibir calculo na área de saldo do html
+            saidaSaldo.innerHTML = this.saldo;
+
+            this.movimentacao.push("Depósito de " + valorHTML.value)
+            valorHTML.value = "";
+        },
+
+        sacar: function () {
+            var valor = Number(valorHTML.value);
+            if (valor > this.saldo) {
+                alert("Saldo Insuficiente!");
+            } else {
+                this.saldo -= valor;
+                this.movimentacao.push("Saque de " + valor)
+            }
+            saidaSaldo.innerHTML = this.saldo;
+            valorHTML.value = "";
+
+        },
+        exibirExtrato: function () {
+            saidaExtrato.innerHTML = "Extrato:";
+            //loop for para exibir o array
+            for (i=0; i<=this.movimentacao.length - 1; i++) {
+                saidaExtrato.innerHTML += this.movimentacao[i] + "";
+            }
+
+        }
+    }
+
+    //exibir a data e a hora de cada transação
+    /*
+            function exibir data() {
+                const data = new Date();
+                console.log(data); //obtem dados completos
+                let hora = data.getHours();
+                let minuto = data.getMinutes();
+                let segundo = data.getSeconds();
+                let dia = data.getDay()
+                let mes = data.getMonth()
+                let ano = data.getFullYear()
+                document.getElementById("hora").textContent = hora+":"+minuto+":"+segundo;
+            }
+    */
+
+</script>
+
+</html>

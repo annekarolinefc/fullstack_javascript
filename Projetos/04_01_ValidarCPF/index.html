@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Validação CPF</title>
+</head>
+<body>
+    <h1>Validar CPF</h1>
+    <p>Digite o CPF sem pontos ou traço:</p>
+    <input id="cpf" >
+    <input type="button" value="Validar" onclick="validarCPF();">
+</body>
+<script>
+    function validarCPF(){
+    //obtendo o elemento digita pelo ID e transformando em String
+    var cpf = String(document.getElementById("cpf").value);
+    var cpfDV1 = cpf[9];
+    var cpfDV2 = cpf[10];
+    //armazendo a somatória de valores = 0
+    var soma = 0;
+    //laço que calcula o primeiro dv
+    for(i=0; i<=8; i++){
+        soma += cpf[i] * (10-i); 
+    }
+    var calcDV1 =11-(soma % 11)
+
+    //reatribundo zero a variavel
+    var soma = 0;
+    //laço que calcula o segundo dv
+    for(i=0; i<=9; i++){
+        soma += cpf[i] * (10-i); 
+    }
+    var calcDV2 = 11-(soma % 11)
+
+    if(cpfDV1 == calcDV1 && cpfDV2 == calcDV2 ){
+        alert("CPF É VÁLIDO")
+    } else{
+        alert("CPF É INVÁLIDO")
+    }
+}
+</script>
+</html>

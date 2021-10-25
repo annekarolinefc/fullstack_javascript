@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JS Intermediário</title>
+    <link rel="stylesheet" href="../Semana04/style.css">
+</head>
+<body>
+    <header>
+        <h1>Semana 03/08</h1>
+        <h2>Estudos dedicados ao HTML</h2>
+        <div class="buttons-route">
+            <button><a href="/Roteiro Completo/index.html">Ver Roteiro</a></button>
+            <button><a href="/index.html">Tela Inicial</a></button>
+        </div>
+        <div class="buttons-day">
+            <button class="buttons__day"><a href="#dia01">Dia 01</a></button>
+            <button class="buttons__day"><a href="#dia02">Dia 02</a></button>
+            <button class="buttons__day"><a href="#dia03">Dia 03</a></button>
+            <button class="buttons__day"><a href="#dia04">Dia 04</a></button>
+            <button class="buttons__day"><a href="#dia05">Dia 05</a></button>
+        </div>
+    </header>
+    <main>
+        <div class="cards" id="dia01">
+            <h3 class="title-day">Dia 01</h3>
+            <div class="content">
+                <fieldset>
+                    <legend>Paradigmas</legend>
+                    <p>Toda linguagem de programação possui um paradigma.</p>
+                    <p>Se encontra dentro de alguma classificação conforme a suas funcionalidades e do modo como permite que nós estruturemos o nosso código.</p>
+                    <p>O javascript (de diversas outras linguagens) possui vários paradigmas.</p>
+                    <ul>
+                        <li>Orientado a objetos;</li>
+                        <li>Orientado a eventos;</li>
+                        <li>Funcional e outras;</li>
+                    </ul>
+                </fieldset>
+                <fieldset>
+                    <legend>POO</legend>
+                    <p><b>POO</b> vem de Programação Orientada a Objetos, tambem conhecida como OOP (Object Oriented Programming)</p>
+                    <p>Extrair, dentro do codigo, objetos do mundo real.</p>
+                    <p>Permite que os objetos interajam entre si através da troca de mensagens.</p>
+                    <p>A base da POO são as Classes e os Objetos.</p>
+                    <br>
+                    <p>Todo objeto é criado a partir de uma classe.</p>
+                    <p>A classe é um molde que é utilizado para criar um objeto.</p>
+                    <p>Dentro da classe nos conseguimos definiro os <b>atributos e métodos</b> que um objeto receberá.</p>
+                    
+                </fieldset>
+                <fieldset>
+                    <legend>Construtores</legend>
+                    <p>Instância de uma classe é o que da origem a um objeto.</p>
+                    <p>A classe vem com um metodo especial que chamamos de construtor. Utilizamos um construtor para definir 
+                        valores iniciais dos atributos de um objeto. Esse método é chaamdo quando criamos uma instância de uma classe com a palavra.
+                    </p>
+                    <p></p>
+                </fieldset>
+                <fieldset>
+                    <legend>
+                        Métodos
+                    </legend>
+                    <p></p>
+                </fieldset>
+                <fieldset>
+                    <legend>Associando Classes</legend>
+                    <p>class Captain{
+                        constructor(name, age, flightHours){
+                            this.name = name;
+                            this.age = age;
+                            this.flightHours = flightHours;
+                        }
+                    }
+                    
+                    class spaceshipCaptain{
+                        constructor(name, crewQuantify, captainName, captainAge, captainFlightHous){
+                            this.name = name;
+                            this.crewQuantify= crewQuantify;
+                            this.captain = new Captain(captainName, captainAge, captainFlightHous)
+                        }
+                    }
+                    
+                    let spaceshipOne = new spaceshipCaptain("Ártmis", 13, "Will Grey", 45, 15000)
+                    console.log(spaceshipOne)</p>
+                </fieldset>
+                <fieldset>
+                    <legend>Herança</legend>
+                    <P>É um recurso do Paradigma Orientado a Objetos.</P>
+                    <p>Permite que classes herdem caracteristicas de outras classes, isto é, declaramos uma classe que vai herdar metodos e atributos de outra classe.</p>
+                    <p>é uma técnica de reuso de código.</p>
+                    <p>As duas classes devem ter uma relação de <b>É UM</b>.</p>
+                    <p>Como exemplo tem-se: Todo capitão É UMA pessoas. Poderiamos ter uma classe Captain herdando de Person.</p>
+                </fieldset>
+                <fieldset>
+                    <legend>Sobreescrita de métodos</legend>
+                    <p>
+                        
+                    </p>
+                </fieldset>
+                <fieldset>
+                    <legend>Método super</legend>
+                </fieldset>
+            </div>
+        </div>
+        <div class="cards" id="dia02">
+            <h3 class="title-day">Dia 02</h3>
+            <div class="content">
+                <fieldset>
+                    <legend></legend>
+                </fieldset>
+            </div>
+        </div>
+        <div class="cards" id="dia03">
+            <h3 class="title-day">Dia 03</h3>
+            <div class="content">
+                <fieldset>
+                    <legend></legend>
+                </fieldset>
+            </div>
+        </div>
+        <div class="cards" id="dia04">
+            <h3 class="title-day">Dia 04</h3>
+            <div class="content">
+                <fieldset>
+                    <legend></legend>
+                </fieldset>
+            </div>
+        </div>
+        <div class="cards" id="dia05">
+            <h3 class="title-day">Dia 05</h3>
+            <div class="content">
+                <fieldset>
+                    <legend></legend>
+                </fieldset>
+            </div>
+        </div>
+        
+</body>
+</html>

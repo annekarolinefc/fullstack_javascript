@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Manipulando o DOM</title>
+    <script>
+        function addNewPhone(){
+            const phoneForm = document.querySelector("form#phones")
+            console.log(phoneForm.children) //Imprime todos os filgos do elemento: só tem um que é o p
+
+            //CLONAR O PRIMEIRO FILHO
+            const newPhone = phoneForm.children[0].cloneNode(true);
+
+            //irá aumentar: Telephone 2, 3, ...
+            const phonePosition = (phoneForm.children.length + 1);
+            newPhone.querySelector("label").innerText = "Telephone " + phonePosition + ": ";
+            phoneForm.appendChild(newPhone)
+            console.log(phoneForm.children)
+        }
+        function printPhone(){
+            let message = "";
+            const phones = document.querySelectorAll("input[name='phone']")
+            phones.forEach((phone, index)=>{
+            message +="Telephone " + (index + 1) + ": " + phone.value + "\n"})
+            alert(message)
+        }
+
+    </script>
+</head>
+<body>
+    <h1>Manipulando o DOM</h1>
+    <button onclick="addNewPhone()">Novo Telefone</button>
+    <button onclick="printPhones()">Imprimir Telefones</button>
+    <br>
+    <form action="" id="phones">
+        <p>
+            <label>Telephone 1: </label>
+            <input type="text" name="phone">
+        </p>
+    </form>
+</body>
+</html>

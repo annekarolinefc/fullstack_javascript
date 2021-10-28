@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DOM - Selecionando elementos</title>
+    <script>
+        function show(){
+            //UTILIZANDO GET ELEMENT BY ID
+            //pegando o elemento
+            let element = document.getElementById("name");
+            //imprimindo o elemento
+            console.log(element)
+            //retornando o valor
+            console.log(element.value)
+
+            //UTILIZANDO GET ELEMENT BY NAME
+            let elements = document.getElementsByName("phone")
+            console.log(elements[0].value)
+            console.log(elements[1].value)
+
+            //UTILIZANDO QUERY
+            let queryExemplo = document.querySelectorAll("div#phone input[name='phone']");
+            console.log(queryExemplo.value)
+
+            //UTILIZANDO TAG NAME
+            let tagExemplo = document.getElementsByTagName("input")
+            console.log(tagExemplo.value)
+        }
+        1
+    </script>
+</head>
+<body>
+    <button onclick="show()">Exibir</button>
+
+    <p>
+        <label>Nome:</label>
+        <input type="text" id="name" name="fullname">
+    </p>
+
+    <div id="phones">
+        <p>
+            <label>Phone 01:</label>
+            <input type="text" name="phone" id="phone01">
+        </p>
+        <p>
+            <label>Phone 02:</label>
+            <input type="text" name="phone" id="phone02">
+        </p>
+    </div>
+</body>
+</html>

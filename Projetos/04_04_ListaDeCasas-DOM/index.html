@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lista de casas</title>
+    <script src="../04_04_ListaDeCasas-DOM/script.js"></script>
+</head>
+<body>
+    <h1>Formulário de cadastro</h1>
+    <form>
+        <label>Área da casa: </label>
+        <input type="text" name="area">
+        <br>
+        <label>Número da Residência: </label>
+        <input type="text" name="numero">
+        <br>
+        <label>Bairro: </label>
+        <input type="text" name="bairro">
+        <br>
+        <label>Cidade:</label>
+        <input type="text" name="cidade">
+        <br>
+        <button onclick="adicionar()" type="button">Adicionar</button>
+    </form>
+    <br>
+    <hr>
+    <br>
+    <h1>Lista de Casas</h1>
+    <ul id="house-list"></ul>
+</body>
+</html>

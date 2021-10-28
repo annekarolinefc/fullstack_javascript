@@ -58,6 +58,84 @@
         <p>Fácil de utilizar e configurar.</p>
         <p>Open Source (Dompinio Público)</p>
     </fieldset>
+    <fieldset>
+        <legend>Criando o banco de dados</legend>
+        
+    </fieldset>
+    <fieldset>
+        <legend>Linguagem SQL</legend>
+        <details>
+            <summary>FK - Foreing key</summary>
+            <p>É uma chave estrangeira que referencia outra tabela</p>
+        </details>
+        <details>
+            <summary>Primary Key</summary>
+        </details>
+        <details>
+            <summary>Criar tabelas</summary>
+            <p>Dentro do arquivo dos codigos criar um arquivo chamado <b>databse.db</b></p>
+            <p>Abrir esse arquivo com o DB Browser for SQLite</p>
+        </details>
+        <details>
+            <summary>Inserts</summary>
+            <p>Utilizado para inserir dados nas tabelas.</p>
+            <div class="codigo" style="margin: 0px auto; width: 80%; background-color: burlywood; padding: 2px 10px">
+                <p><b>INSERT INTO</b> "users" (name, last_name, age)  </p>
+                <p><b>VALUES</b> ("João", "Francisco", 21)</p>
+            </div>
+        </details>
+        <details>
+            <summary>Selects</summary>
+            <p>Utilizado para consultas as informações do banco de dados.</p>
+            <div class="codigo" style="margin: 0px auto; width: 80%; background-color: burlywood; padding: 2px 10px">
+               <p><b>SELECT</b> *</p>
+               <p><b>FROM</b> "users"</p>
+               <br>
+               <p><b>SELECT</b> name, last_name</p>
+               <p><b>FROM</b> "users"</p>
+               <br>
+               <p>Para fazer filtros</p>
+               <p><b>SELECT</b> name, last_name</p>
+               <p><b>FROM</b> "users"</p>
+               <p>WHERE age > 31</p>
+            </div>
+        </details>
+        <details>
+            <summary>Update</summary>
+            <p></p>
+            <div class="codigo" style="margin: 0px auto; width: 80%; background-color: burlywood; padding: 2px 10px">
+                <p><b>UPDATE</b> "users"</p>
+                <p><b>SET</b> last_name = "Almeida"</p>
+                <p><b>WHERE</b> id = 3;</p>
+            </div>
+        </details>
+        <details>
+            <summary>Delete</summary>
+            <p></p>
+            <div class="codigo" style="margin: 0px auto; width: 80%; background-color: burlywood; padding: 2px 10px">
+                <p><b>DELETE FROM</b> "users"</p>
+                <p><b>WHERE</b> id=4</p>
+            </div>
+        </details>
+        <details>
+            <summary>Inner Join</summary>
+            <p>Utilizado para relacionamento entre tabelas.</p>
+            <p>É a <b>JUNÇÃP</b> de duas tabelas.</p>
+            <p>Traz os dados que possuem alguma relação.</p>
+            <div class="codigo" style="margin: 0px auto; width: 80%; background-color: burlywood; padding: 2px 10px">
+                <p><b>SELECT </b> *</p>
+                <p><b>FROM</b> "users"</p>
+                <p><b>INNER JOIN</b> "users-logins" <b>ON</b> users-login.id_users = users.id</p>
+            </div>
+        </details>
+        <details>
+            <summary>Left Join</summary>
+            <p>Utilizado para relacionamento entre tabelas.</p>
+            <p>Traz todos os dados.</p>
+            <div class="codigo" style="margin: 0px auto; width: 80%; background-color: burlywood; padding: 2px 10px">
+            </div>
+        </details>
+    </fieldset>
 </body>
 
 </html>

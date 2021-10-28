@@ -1,0 +1,39 @@
+COMO FUNCIONA UMA PÁGINA WEB HOJE?
+    - client-side
+    - server-side
+
+Exemplos:
+Navegador(client-side) irá acessar www.google.com
+após apertar enter, o navegador fará uma requisição através da internet
+encontrará o servidor web (server-side)
+devolve, atraves da internet, para o navegador as informações necessárias.
+
+para o exemplo, foi utilizado o protocolo HTTP.
+    - request: é a requisição. Pede uma informação para os servidor.
+    - response: é a resposta. Servidor responde, podendo ser html, json, ...
+
+VERBOS HTTP
+    - request GET ------> Servidor web 
+        utilizado para RECUPERAR INFORMAÇÕES.
+    - request POST -----> Servidor web
+        utilizado para INSERIR INFORMAÇÕES.
+    - request PUT -----> Servidor web
+        utilizado para ATUALIZAR INFORMAÇÕES 
+    - request DELETE -----> Servidor web 
+        usado para REMOVER INFORMAÇÕES
+
+
+API 
+client side application --------  API ----- Busca dados de outra API, database ou files.
+    retorna formato JSON
+
+ENDPOINTS -> São os endereços
+    request get ----> localhost:8000/api/customers
+    request post ----> localhost:8000/api/customers
+    request put ----> localhost:8000/api/customers/:id
+
+FAMOSO CRUD 
+C-REATE - criação
+R-EAD - leitura
+U-PDATE - atualização
+D-ELETE - remoção

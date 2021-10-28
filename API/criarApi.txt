@@ -1,0 +1,89 @@
+1º Passo) Dentro da pasta do projeto, digite:
+    npm init 
+    digite enter para escolher yes 
+    - aparecerá um arquivo chamado package.json
+
+2º Passo) Ao analisar o arquivo package.json você verá:
+    - nome da aplicação
+    - versão
+    - descrição
+    - main 
+    - script: são apelidos de comandos
+        "scripts:"{
+            "test": "echo \"Error: no test specified\" && exit 1"
+            "dev" : "nodemon ./src/index.html"
+            "nomeDoApelido" : "comando executado por baixo do panos"
+        }
+    - autor 
+    - licensa
+
+3º Passo) Instalar duas bibliotecas que serão utilizadas. Digite: 
+    npm install nodemon 
+    npm install express
+    - aparecerá a pasta node_modules com as dependencias
+    - aparecerá o arquivo package-lock.json com as versões das dependencias.
+
+4º Passo) executar o codigo:
+    npm run dev
+    - você verá a execução do comando feito dentro do script
+
+5º Passo) Importar a configuração type dentro de package.json
+"type" : "module"
+
+6º Passo) Importar a biblioteca express 
+    Dentro do arquivo index.js, insira:
+
+    import express from 'express';
+    const app = express();
+
+        const customers =[
+            {id: 1, name: "Marcos Vinicius"}
+            {id: 2, name: "Maria Eduarda"}
+            {id: 3, name: "José Francisco"}
+        ];
+
+        app.use(express.json());
+
+        //criando um endpoint 
+        app.get('/api/ping', (request, response) =>{
+            response.send({
+                message: "pong"
+            })
+        });
+        //Exibindo os dados 
+        app.get('api/customers', (request, response) => {
+            respose.send(customers)
+        });
+
+        //
+        app.post('api/customers', (request, response) => {
+            //recebendo uma informação
+            const { body } = request;
+            //acrescentando em um array
+            customer.push(body)
+            //mandando de volta o array atualizado
+            respose.send(customers)
+        });
+
+        app.put('api/customers/:id', (request, response) => {
+            const { id } = request.params;
+            const { body } = request;
+
+            const index = customers.findIndex(customers => customers.id ==id);
+            customers[index] = body;
+
+            response.send(customers);    
+        });
+
+        app.delete('api/customers/:id', (request, response) => {
+            const { id } = request.params;
+            const newArray = customers.filter(customers => customer.id!=id)
+            response.send(newArray);
+        });
+
+    app.listen(8000, () =>{
+        console.log("Servidor funcionando na porta 8000...")
+    })
+
+7º Passo) Ferramenta para teste de api
+    https://www.postman.com/

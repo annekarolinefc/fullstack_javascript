@@ -1,0 +1,7 @@
+NODEJS 
+    - é um software de um código aberto
+    - utiliza a engine V8 para interpretar javascript sem navegador
+    - permite executar código JS em vários sistemas operacioanis
+    - muito leve e versátil
+    - fácil aprendizado
+    - comunidade muito ativa

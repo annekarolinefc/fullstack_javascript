@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Semana 05</title>
+    <link rel="stylesheet" href="../Semana05/style.css">
+</head>
+<body>
+    <header>
+        <h1>Semana 03/08</h1>
+        <h2>Estudos dedicados ao HTML</h2>
+        <div class="buttons-route">
+            <button><a href="/Roteiro Completo/index.html">Ver Roteiro</a></button>
+            <button><a href="/index.html">Tela Inicial</a></button>
+        </div>
+        <div class="buttons-day">
+            <button class="buttons__day"><a href="#dia01">Dia 01</a></button>
+            <button class="buttons__day"><a href="#dia02">Dia 02</a></button>
+            <button class="buttons__day"><a href="#dia03">Dia 03</a></button>
+            <button class="buttons__day"><a href="#dia04">Dia 04</a></button>
+            <button class="buttons__day"><a href="#dia05">Dia 05</a></button>
+        </div>
+    </header>
+    <main>
+        <div class="cards" id="dia01">
+            <h3 class="title-day">Dia 01</h3>
+            <div class="content">
+                <fieldset>
+                    <legend>Versos do ECMAScript</legend>
+                    <p>ECMAScript é o nome oficial do JS.</p>
+                    <p>Javascript já estava patenteado.</p>
+                    <p>ECMA (European Computer Manufacturers Association) é uma associação de padronização de sistemas de informação.</p>
+                    <p>Atualmente estamos na versão ES8</p>
+                </fieldset>
+                <fieldset>
+                    <legend>Interpolação de String</legend>
+                    <p>Utilizada com dois apóstrofos (``).</p>
+                    <p>let spaceshipName = "Colossus"</p>
+                    <p>console.log("Nome da nave: " + spaceshipName)</p>
+                    <p>Console.log(`Nome da nave: ${spaceshipName}`)</p>
+                </fieldset>
+                <fieldset>
+                    <legend>Desestruturação de Objetos e Arrays</legend>
+                    <p>Desestruturação é uma expressão javascript que possibilita extrair dados de arrays e objetos.</p>
+                    <h3>Desestruturação em Objetos</h3>
+                    <p>let spaceship = { name: "Colossus", crewQuantify: 10, isHitched: false}</p>
+                    <p>let spaceshipName = spaceship.name</p>
+                    <p>let crewQuantify = spaceshio.crewQuantify</p>
+                    <p>Mapenado seria:</p>
+                    <p>let {name: spaceshipName, crewQuantify: crewQuantify} = spaceship</p>
+                    <br>
+                    <h3>Desestruturação em Arrays</h3>
+                    <p>let spaceships = ["Colossous", "Artenus", "Fênix"]</p>
+                    <p>let [coloussus, artemis] = spaceships </p>
+                </fieldset>
+                <fieldset>
+                    <legend>Operador Spread</legend>
+                    <p>permite expandir elementos de um objeto literário</p>
+                    <p>é representado por <b>...</b> </p>
+                    <br>
+                    <p>let spaceships = ["Colossous", "Artenus", "Fênix"]</p>
+                    <p>console.log(spaceships) irá imprimir o array.</p>
+                    <p>Ao utilizar o operador spread, expande o elemento</p>
+                    <p>console.log(...spaceships) -> imprime cada elemento como se fosse uma string única</p>
+                    <br>
+                    <p>criando uma nova variável</p>
+                    <p>let newSpaceships = [... spaceships, "Puller"] -> todos os elementos de spaceships + puller</p>
+                </fieldset>
+                <fieldset>
+                    <legend>Rest Param</legend>
+                    <p>function greetCrew(message, name){console.log(`${message}, ${name}`)}</p>
+                    <p>function greetCrew(message, name){names.forEach(name => console.log(`${message}, ${name}`))}</p>
+                    <p>greetCrew("seja bem-vindo", ["Arthur", "Jake", "Melissa"])</p>
+                </fieldset>
+                <fieldset>
+                    <legend>NodeJS</legend>
+                    <p>é um interpretador de código Javascript</p>
+                    <p>Criado por tyan Dahl em 2019</p>
+                    <p>Utiliza como motor o interpretador Javascript V8 da Google.</p>
+                </fieldset>
+                <fieldset>
+                    <legend>Formato Json</legend>
+                </fieldset>
+                <fieldset>
+                    <legend>NPM e YARN</legend>
+                </fieldset>
+                <fieldset>
+                    <legend>Transpilação com Babel</legend>
+                    <h3>babel.config.js</h3>
+                    <h3>.babelrc</h3>
+                </fieldset>
+                <fieldset>
+                    <legend>NPX e NPM Scripts</legend>
+                </fieldset>
+            </div>
+        </div>
+        <div class="cards" id="dia02">
+            <h3 class="title-day">Dia 02</h3>
+            <div class="content">
+            </div>
+        </div>
+        <div class="cards" id="dia03">
+            <h3 class="title-day">Dia 03</h3>
+            <div class="content">
+            </div>
+        </div>
+    </main>
+    
+</body>
+</html>

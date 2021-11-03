@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Estilos</title>
+    <style>
+        p.red-color{
+            color: red;
+        }
+    </style>
+    <script>
+        function setBlueBackground(){
+            let element = document.getElementById("style-text");
+            element.style.backgroundColor = "blue";
+        }
+        function setTransparenteBackground(){
+            document.getElementById("style-text").style.backgroundColor = "transparent";
+        }
+        function setRedColor(){
+            let element = document.getElementById("style-text");
+            element.classList.add("red-color") //adicionando uma classe
+        }
+        function removeRedColor(){
+            let element = document.getElementById("style-text");
+            element.classList.remove("red-color")
+        }
+    </script>
+</head>
+<body>
+    <button type="button" onclick="setBlueBackground()">Fundo Azul</button>
+    <button type="button" onclick="setTransparenteBackground()">Fundo Transparente</button>
+    <button type="button" onclick="setRedColor()">Fonte Vermelha</button>
+    <button type="button" onclick="removeRedColor()">Fonte Normal</button>
+    <br>
+    <p id="style-text">
+        Manipulando CSS via DOM
+    </p>
+</body>
+</html>

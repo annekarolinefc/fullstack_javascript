@@ -1,0 +1,72 @@
+body{
+    padding: 20px;
+}
+
+main{
+    text-align: center;
+}
+img{
+    width: 400px;
+
+}
+.buttons-route{
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+button{
+    background-color: khaki;
+    border: 1px solid;
+    padding: 5px 10px;
+    border-radius: 20px;
+    margin: 0 30px;
+    height: 100px;
+    width: 200px;
+    width: 300px;
+    height: 200px;
+    
+}
+button > a{
+    color: black;
+    text-decoration: none;
+    font-size: 14px;
+    padding: 4px 15px;
+}
+
+button:hover{
+    background-color: rgb(129, 27, 104);
+    transform: scale(1.05);
+}
+
+button:hover > a{
+    color: white;
+}
+
+.buttons__day{
+    background-color: rgb(245, 184, 163);
+}
+.cards{
+    margin-top: 15px;
+    border: 1px solid gray;
+    border-radius: 20px;
+}
+.cards>h3{
+    text-align: center;
+}
+
+.content{
+    padding: 10px 20px;
+}
+fieldset{
+    margin-bottom: 1rem;
+}
+
+.title-day{
+    font-size: 24px;
+}
+
+button:disabled, button[disabled]{
+    border: 1px solid #999999;
+    background-color: #cccccc;
+    color: #666666;
+}

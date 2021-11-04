@@ -5,3 +5,9 @@ x - sudo chown -R $USER:$GROUP ~/.config ->
 2 - npm install -save-dev webpack webpack-cli->Intalação do proprio webpack e Instalação do webpack-cli
 3 - criar diretorio src e colocar um index.js 
 4 - criar um diretorio dist e criar o index.html
+5 - npm install moment -> Importando o moment 
+6 - criar arquivo webpack.config.js
+
+7 - npx webpack --mode development
+
+8 - npm install @babel/cpre-> Inatalando o babel

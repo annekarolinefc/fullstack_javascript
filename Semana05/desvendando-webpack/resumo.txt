@@ -1,0 +1,7 @@
+1 - npm init -> digita na linha de comando, dentro da pasta. Cria-se o arquivo package.json
+x - sudo chown -R $USER:$GROUP ~/.npm -> 
+x - sudo chown -R $USER:$GROUP ~/.config -> 
+
+2 - npm install -save-dev webpack webpack-cli->Intalação do proprio webpack e Instalação do webpack-cli
+3 - criar diretorio src e colocar um index.js 
+4 - criar um diretorio dist e criar o index.html

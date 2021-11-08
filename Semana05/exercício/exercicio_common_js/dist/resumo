@@ -1,0 +1,5 @@
+npm init -y
+npm install --save-dev webpack webpack-cli
+npx webpack --mode development
+npm install webpack-dev-server --save-dev
+npm start 

@@ -1,0 +1,26 @@
+1) npm init -y
+    - é criado o arquivo package.json
+2) npm install --save-dev webpack webpack-cli
+    instalar webpack
+    criou pasta node-modules e o arquivo package-lock.json
+3) Criar direotio src
+4) criar arquivo index.js dentro do src
+5) Criar diretorio dist
+6) criar arquivo index.html dentro de dist
+7) npm install moment 
+    instalar o moment
+
+8) editar aquivo 
+9) npx webpack 
+    na linha de comando
+10) webpack.config.js
+    criar arquivo
+11) npx webpack --mode development
+    na linha de comando
+
+12) npm install webpack-dev-server --save-dev
+    intalar mini servidor
+
+
+
+arquivos do src vao para dist

@@ -1,6 +1,7 @@
 
 class spaceship{
-    constructor(carga, capacidadeMaxima){
+    constructor(nome, carga, capacidadeMaxima){
+        this.nome = nome;
         this.carga = carga
         this.capacidadeMaxima = capacidadeMaxima
     }

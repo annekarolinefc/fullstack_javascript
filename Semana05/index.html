@@ -161,6 +161,56 @@
                         <li>Separação de contextos.</li>
                     </ul>
                 </fieldset>
+
+                <fieldset>
+                    <legend>SetInterval e setTimeOut</legend>
+                    <p>São funções de alta ordem (recebem outra função como parâmetro).</p>
+                    <p>Executam a função depois de um tempo decorrido.</p>
+                    <p>A setTimeOut executa apenas uma vez.</p>
+                    <p>A setInterval executa em intervalos de tempo.</p>
+
+                    <!--
+                        setTimeout(()=>{
+                            console.log("Executando após 2 segundos")
+                        }, 2000) //executa após 2.000 milisegundos
+
+                        setInterval(()=>{
+                            console.log("Executando a cada 2 segundos")
+                        }, 2000) //executa a cada 2.000 milisegundos
+                    -->
+                </fieldset>
+
+                <fieldset>
+                    <legend>Síncrono e Assíncrono</legend>
+                    <h3>SÍNCRONO</h3>
+                    <p>Uma execução síncrona segue um fluxo linear.</p>
+                    <p>Executa passo a passo do trecho do código.</p>
+                    <p>Só executa uma instrução após a anterior ter sido executada.</p>
+                    <p>A execução Assíncrona não segue este formato.</p>
+                    <h3>ASSÍNCRONA</h3>
+                    <p>A execução assíncrona nao aguarda o fim da execução para passar para o proximo passo.</p>
+                    <p>Passa para a instrução seguintes sem aguardar a conclusão da atual.</p>
+                </fieldset>
+                <fieldset>
+                    <legend>Promises</legend>
+                    <p>Recursos assíncronos muito importantes do JS.</p>
+                    <p>Dão suporte para operações assíncronas.</p>
+                    <p>Guardam a operação que precisamos dentro de um objeto cuja classe é chamada de promisse.</p>
+                    <p>Quando precisamos executar, basta chamar este objeto. </p>
+                    <p>A promisse possui quatro estados:</p>
+                    <ul>
+                        <li>Pendente: quando a Promise é criada e ainda não foi executada.</li>
+                        <li>Realizada: quando teve sucesso na operação.</li>
+                        <li>Recusada: quando reve falha na operacao.</li>
+                        <li>Estabelecida: quando foi realizada ou recusada.</li>
+                    </ul>
+                    <p>Pendente é o status inicial. </p>
+                    <p>Nós decidimos se ela vai para Realizada ou Recusada.</p>
+                </fieldset>
+                <fieldset>
+                    <legend>Utilizando o Then</legend>
+                    <p></p>
+                </fieldset>
             </div>
         </div>
         <div class="cards" id="dia03">

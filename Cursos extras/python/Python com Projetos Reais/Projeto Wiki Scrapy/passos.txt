@@ -1,0 +1,7 @@
+1) pip install virtualenv 
+    -> instalar a virtualenv 
+    ambiente virtual que empacota todas as dependências
+    e armazena em um diretório
+    
+2) virtualenv venv -> 
+3) pip install beautifulsoup4

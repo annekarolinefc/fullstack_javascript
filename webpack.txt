@@ -1,0 +1,15 @@
+Configurar o WEBPACK
+1) Criar uma pasta para o projeto
+2) Criar o arquivo package.json através do comando: npm init -y
+3) Criar a dependencia do webpack atraves do comando: npm install --save-dev webpack webpack-cli 
+4) Instalar o babel para transformar js moderno para js antigo com o comando: npm install –save-dev @babel/core babel-loader @babel/preset-env @babel/preset-react
+5) Criar o arquivo de configuração: webpack.config.js 
+6) Criar uma pasta src 
+7) Criar um arquivo index.js dentro da pasta src 
+8) Criar a aplicação react com o comando: npm install --save react react-dom
+9) Criar a pasta public 
+10) Criar o arquivo index.html dentro da pasta public 
+
+
+
+https://emersonbroga.com/como-configurar-webpack-para-projeto-react/

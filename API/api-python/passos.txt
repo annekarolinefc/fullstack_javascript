@@ -1,0 +1,13 @@
+INSTALAR O FLASK
+    pip install flask
+
+CRIAR ARQUIVO DE ROTAS
+    Arquivo routes.py 
+
+APLICAÇÃO RODANDO COM 
+    from flask import Flask
+    app = Flask("Youtube")
+    app.run()
+
+INSERIR AS ROTAS
+    

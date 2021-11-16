@@ -1,0 +1,11 @@
+Usado em:
+    - aplicações Android
+    - aplicações Desktop
+    - aplicações WEB - com django 
+
+
+INSTALAR O SQLite VIA CMD: 
+    - pip install db-sqlite3
+
+
+ 

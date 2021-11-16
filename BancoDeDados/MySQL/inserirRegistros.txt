@@ -1,0 +1,4 @@
+Utiliza-se o comando INSERT INTO e VALUES
+
+INSERT INTO pessoas(nome, nascimento)
+VALUES ("NATHALLY", "1990-05-22")

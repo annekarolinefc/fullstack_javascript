@@ -1,0 +1,5 @@
+Subir o servidor e o mysql 
+
+abrir o localhost/phpmyadmin
+acessar banco de dados
+clicar no botão criar banco de dados

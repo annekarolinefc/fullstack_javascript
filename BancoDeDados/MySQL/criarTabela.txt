@@ -1,0 +1,9 @@
+Utiliza-se o comando SQL: CREATE TABLE 
+
+CREATE TABLE pessoas(
+    nome varchar(20),
+    id int,
+    nascimento date 
+);
+
+

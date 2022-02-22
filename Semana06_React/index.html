@@ -1,0 +1,212 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>React</title>
+</head>
+
+<body>
+    <header>
+        <h1>Semana 06/08</h1>
+        <h2>Estudos dedicados ao HTML</h2>
+        <div class="buttons-route">
+            <button><a href="/Roteiro Completo/index.html">Ver Roteiro</a></button>
+            <button><a href="/index.html">Tela Inicial</a></button>
+        </div>
+        <div class="buttons-day">
+            <button class="buttons__day"><a href="#dia01">Dia 01</a></button>
+            <button class="buttons__day"><a href="#dia02">Dia 02</a></button>
+            <button class="buttons__day"><a href="#dia03">Dia 03</a></button>
+            <button class="buttons__day"><a href="#dia04">Dia 04</a></button>
+            <button class="buttons__day"><a href="#dia05">Dia 05</a></button>
+        </div>
+    </header>
+    <main>
+        <div class="cards" id="dia01">
+            <h3 class="title-day">Dia 01</h3>
+            <div class="content">
+                <h3>Introdução ao React</h3>
+                <p>Uma das bibliotecas mais pedidas do mercado.</p>
+
+                <details>
+                    <Summary>O que é o React e como ele funciona</Summary>
+                    <h3>O que é o React?</h3>
+                    <p>é uma biblioteca Javascript declarativa, eficiente e flexível para a criação de interfaces de
+                        usuário(UI).</p>
+                    <p>Surgiu em 2011 no Facebook.</p>
+                    <p>Caracteristicas</p>
+                    <ul>
+                        <li>é uma biblioteca, nao um framework</li>
+                        <li>é baseado em componentes</li>
+                        <li>é usado para crias SPAs</li>
+                    </ul>
+                    <p>O react é feito com Javascript, entao você pode reaproveitar seus conhecimentos.</p>
+                </details>
+
+                <!--
+
+                    https://www.youtube.com/watch?v=ErjWNvP6mko
+                    https://www.youtube.com/watch?v=PNu4ifGq3mU
+                    https://www.youtube.com/watch?v=AeCakESktEQ
+                    https://www.youtube.com/watch?v=XQxitgyZ_S4&t=13s
+                    https://www.youtube.com/watch?v=GJ8Vm-h0V8I
+                -->
+
+            </div>
+        </div>
+
+        <details>
+            <Summary>Como criar seu primeiro projeto react</Summary>
+            <h3>Hello World</h3>
+        </details>
+
+        <details>
+            <Summary>O que são componentes e como utilizá-los</Summary>
+            <h3>Components</h3>
+            <p>São pedaços da tela.</p>
+            <p>Os components permitem dividir a interface do usuários em partes independentes e reutilizáveis.</p>
+            <p>Há dois tipos de componentes:</p>
+            <ul>
+                <li>Função</li>
+                <li>Classe (features extras)</li>
+            </ul>
+        </details>
+        <details>
+            <summary>
+                O que é o DOM?
+            </summary>
+            <p>É o Document Object Model.</p>
+            <p>É um objeto/interface criado pelo Browser que representa a estrutura do nosso documento HTML e que nos dá
+                meios para interagir com ele(usamos em geral o Javascript apra fazer isso.)</p>
+
+            <div style="background-color: burlywood;">
+                <p>var myBtn = document.getElementById('btn');</p>
+                <p>myBtn.addEventListener('click', function(event){
+                    alert('Botão pressionado');}, false);</p>
+            </div>
+        </details>
+        <details>
+            <summary>O que é JSX?</summary>
+            <p>Não é apenas HTML nem apenas JS.</p>
+            <p>const element = &lt; h1 className="title" &gt; Hello World! &lt;h1&gt; </p>
+            <p>JSX serve para descrever como a nossa User Interface(UI) deve ser.</p>
+            <p>JSX não é interpretado pelo browser, por este motivo devemos utilizar um transpiler (em geral babel) para
+                realizar essa transpilação.</p>
+            <p>Ao contrário do passado, em vez de colocar Javascript em HTML, o JSX nos permite colocar o HTML em
+                Javascript.</p>
+        </details>
+        <details>
+            <summary>Entendendo os elementos</summary>
+            <p>Os menores blocos do React são os elements, atraves deles é que descrevemos o que vai aparecer na nossa
+                tela.</p>
+            <div style="background-color: burlywood;">
+                const element = &lt; h1 className="title" &gt; Hello World! &lt;h1&gt;
+            </div>
+            <p>Diferente dos elementos do DOM, os elements do Reacts são objetos simples e "baratos" de criar.</p>
+            <p>O virtual DOM é o rejsx, mas basicamente criou DOM e exibir esses elementos na tela.</p>
+            <br>
+            <p>Para renderizar um elemento, primeiro escolhemos um nó do DOM. Exemplo:</p>
+            <div style="background-color: burlywood;">
+                &lt; div id="root" &gt; &lt;/div&gt;
+            </div>
+            <p>Tudo dentro desse nó será atualizado pelo Virtual DOM.</p>
+        </details>
+        <br>
+        <h3>Criando o primeiro projeto</h3>
+        <details>
+            <summary>Passo-a-passo</summary>
+            <p>Create React App.</p>
+            <ol>
+                <li>Instalar o NODE.</li>
+                <li>Instalar NPX: npm install </li>
+                <li>Criar projeto: npx create-react-app my-first-app</li>
+                <li>Para rodar: npm start</li>
+            </ol>
+        </details>
+
+        <details>
+            <Summary>Renderizando múltiplos components</Summary>
+            <p>Criando a lógica: </p>
+            <p>const Planet = {props} => {
+                const names = ['a', 'b', 'c', 'd']
+                const satelites = names.map(n) => "li" Satelite {n} "/li"
+            </p>
+            <br>
+            <p>Exibindo:</p>
+            <p>
+                "h4" Lista de satétites "/h4"
+                "ul"
+                    {satelites}
+                "/ul" 
+            </p>  
+             
+            <br>
+            <p>Outa forma de exibir: </p>
+            <p>"ul"
+                    {['a', 'b', 'c', 'd', 'e', 'f'].map((n) => 'li' Satelite {n} '/li')}
+                "/ul"
+            </p>
+        </details>
+        <br>
+        
+
+        <details>
+            <summary>Como o react atualiza as views?</summary>
+        </details>
+
+
+
+        <details>
+            <Summary>O que são estados e como utilizá-los</Summary>
+            <p>STATE é um objeto javascript que guarda os dados de um component e determina seu comportament.</p>
+            <p>Quando um estado é atualizado o component é re-renderizado.</p>
+        </details>
+
+        <details>
+            <Summary>O que é Lifecycle dos componentes</Summary>
+            <p>Cada componente React tem um ciclo de vida.</p>
+        </details>
+
+        <details>
+            <Summary>O que são eventos e como utilizá-los</Summary>
+        </details>
+
+        <details>
+            <Summary>Renderização condicional</Summary>
+        </details>
+
+        <details>
+            <Summary>Listas e chaves</Summary>
+        </details>
+
+        <details>
+            <Summary>Controlled e UnControlled Components</Summary>
+        </details>
+
+        <details>
+            <Summary>Como cirar Forms</Summary>
+        </details>
+
+        <details>
+            <Summary>Como organizar os componentes</Summary>
+        </details>
+
+        <details>
+            <Summary>Como utilizar Hooks no React</Summary>
+        </details>
+
+        <details>
+            <Summary>Como pensar reativamente</Summary>
+        </details>
+        <details>
+            <summary>Incluindo rotas</summary>
+            <p>comando cli: nom i react-router-dom --save</p>
+            <p>Pasta Screans: coloca as telas.</p>
+        </details>
+    </main>
+</body>
+
+</html>
